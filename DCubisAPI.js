@@ -1,8 +1,22 @@
-﻿TheDoc= window;
-function evalSample() {
+﻿function evalSample() {
+	var roty;
+	if(document.theForm.roty.value != ""){
+		roty = document.theForm.roty.value;
+	}else{
+		roty = document.theForm.rot.value;
+	}
+	DCubisAPI(document.theForm.posx.value, 
+			document.theForm.posy.value,
+			document.theForm.posz.value,
+			document.theForm.rotx.value,
+			roty,
+			document.theForm.rotz.value,
+			document.theForm.cid.value);
+}
+function DCubisAPI(posx,posy,posz,rotx,roty,rotz,cid){
 	var theArgs;
-	theArgs = document.theForm.entry1.value + "," + document.theForm.entry2.value;
-	TheDoc.DCubis2.EvalScript(theArgs); 
+	theArgs = posx + "," + posy + "," + posz + "," + rotx + "," + roty + "," + rotz + "," + cid;
+	window.DCubis2.EvalScript(theArgs); 
 }
 
 

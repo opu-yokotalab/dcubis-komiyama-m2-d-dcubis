@@ -3,10 +3,26 @@
 <title>D-Cubis2</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="content-script-type" content="text/javascript" />
-<script type="text/javascript" src="test2.js"></script>
+<style type="text/css">
+input{
+	width:5ex;
+}
+</style>
+<script type="text/javascript" src="DCubisAPI.js"></script>
 </head>
 <!-- saved from url=(0013)about:internet -->
 <body bgColor="#404040">
+<form name="theForm">
+右(posX):<input type="text" name="posx" value="">
+上(posY):<input type="text" name="posy" value="">
+後(posZ):<input type="text" name="posz" value="">
+反時計回り(rot):<input type="text" name="rot" value="">
+実装中(cid):<input type="text" name="cid" value=""><br>
+(rotX:<input type="text" name="rotx" value="">
+rotY:<input type="text" name="roty" value="">
+rotZ:<input type="text" name="rotz" value="">)
+<input type="button" value="送信" onclick="evalSample()" name="button">
+</form> 
 <script language=JavaScript>
 <!--
 var metaFile = "http://localhost/Data/startWa_v2.0.xml";
@@ -158,10 +174,5 @@ function ArgArray(sSource) {
 </SCRIPT>
 <noembed>このコンテンツを表示するために必要なShockwaveバージョンがありません。新しいバージョンに更新してください。</noembed>
 <noscript>このコンテンツを表示するために必要なShockwaveバージョンがありません。新しいバージョンに更新してください。</noscript>
-<form name="theForm">
-<input type="TEXT" name="entry1" value="60">
-<input type="TEXT" name="entry2" value="90">
-<input type="BUTTON" value="Shockwave へメッセージを送る" onclick="evalSample()" name="BUTTON">
-</form> 
 </body>
 </html>
