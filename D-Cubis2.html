@@ -22,7 +22,15 @@ input{
 rotY:<input type="text" name="roty" value="">
 rotZ:<input type="text" name="rotz" value="">)
 <input type="button" value="送信" onclick="evalSample()" name="button">
-</form> 
+</form>
+<form name="ctrl">
+<input type="button" value="←" onclick="javascript:posx(-30)">
+<input type="button" value="↑" onclick="javascript:posz(-30)">
+<input type="button" value="↓" onclick="javascript:posz(50)">
+<input type="button" value="→" onclick="javascript:posx(50)">
+<input type="button" value="&#x21ba;" onclick="javascript:rot(4)">
+<input type="button" value="&#x21bb;" onclick="javascript:rot(-4)">
+</form>
 <script language=JavaScript>
 <!--
 var metaFile = "http://localhost/Data/startWa_v2.0.xml";

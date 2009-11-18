@@ -1,4 +1,17 @@
-﻿function evalSample() {
+﻿function posx(posx){
+  window.DCubis2.EvalScript(posx + ",,,,,,");
+}
+function posy(posy){
+  window.DCubis2.EvalScript("," + posy + ",,,,,");
+}
+function posz(posz){
+  window.DCubis2.EvalScript(",," + posz + ",,,,");
+}
+function rot(rot){
+  window.DCubis2.EvalScript(",,,," + rot + ",,");
+}
+
+function evalSample() {
 	var roty;
 	if(document.theForm.roty.value != ""){
 		roty = document.theForm.roty.value;
