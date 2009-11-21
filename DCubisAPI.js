@@ -10,6 +10,9 @@ function posz(posz){
 function rot(rot){
   window.DCubis2.EvalScript(",,,," + rot + ",,");
 }
+function cid(cid){
+  window.DCubis2.EvalScript(",,,,,," + cid);
+}
 
 function evalSample() {
 	var roty;

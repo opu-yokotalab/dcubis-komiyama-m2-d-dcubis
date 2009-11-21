@@ -17,7 +17,7 @@ input{
 上(posY):<input type="text" name="posy" value="">
 後(posZ):<input type="text" name="posz" value="">
 反時計回り(rot):<input type="text" name="rot" value="">
-実装中(cid):<input type="text" name="cid" value=""><br>
+コンテンツへ(cid):<input type="text" name="cid" value="">
 (rotX:<input type="text" name="rotx" value="">
 rotY:<input type="text" name="roty" value="">
 rotZ:<input type="text" name="rotz" value="">)
@@ -30,6 +30,12 @@ rotZ:<input type="text" name="rotz" value="">)
 <input type="button" value="→" onclick="javascript:posx(50)">
 <input type="button" value="&#x21ba;" onclick="javascript:rot(4)">
 <input type="button" value="&#x21bb;" onclick="javascript:rot(-4)">
+<input type="button" value="上" onclick="javascript:posy(10)">
+<input type="button" value="下" onclick="javascript:posy(-10)">
+</form>
+<form name="cidmove">
+コンテンツへ<input type="text" name="oid" value="">
+<input type="button" name="cidbutton" value="移動" onclick="cid(document.cidmove.oid.value.toString())">
 </form>
 <script language=JavaScript>
 <!--
