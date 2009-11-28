@@ -1,37 +1,31 @@
-﻿function posx(posx){
-  window.DCubis2.EvalScript(posx + ",,,,,,");
+﻿function restart(){
+  window.DCubis2.EvalScript("restart,,,,,,");
+}
+function fullScreen(){
+  window.DCubis2.EvalScript("screen,full,,,,,");
+}
+function normalScreen(){
+  window.DCubis2.EvalScript("screen,normal,,,,,");
+}
+function posx(posx){
+  window.DCubis2.EvalScript("," + posx + ",,,,,");
 }
 function posy(posy){
-  window.DCubis2.EvalScript("," + posy + ",,,,,");
+  window.DCubis2.EvalScript(",," + posy + ",,,,");
 }
 function posz(posz){
-  window.DCubis2.EvalScript(",," + posz + ",,,,");
+  window.DCubis2.EvalScript(",,," + posz + ",,,");
 }
 function rot(rot){
-  window.DCubis2.EvalScript(",,,," + rot + ",,");
+  window.DCubis2.EvalScript(",,,,," + rot + ",");
 }
 function cid(cid){
-  window.DCubis2.EvalScript(",,,,,," + cid);
+  window.DCubis2.EvalScript("cid," + cid + ",,,,,");
 }
 
-function evalSample() {
-	var roty;
-	if(document.theForm.roty.value != ""){
-		roty = document.theForm.roty.value;
-	}else{
-		roty = document.theForm.rot.value;
-	}
-	DCubisAPI(document.theForm.posx.value, 
-			document.theForm.posy.value,
-			document.theForm.posz.value,
-			document.theForm.rotx.value,
-			roty,
-			document.theForm.rotz.value,
-			document.theForm.cid.value);
-}
-function DCubisAPI(posx,posy,posz,rotx,roty,rotz,cid){
+function DCubisAPI(mode,posx,posy,posz,rotx,roty,rotz,cid){
 	var theArgs;
-	theArgs = posx + "," + posy + "," + posz + "," + rotx + "," + roty + "," + rotz + "," + cid;
+	theArgs = mode + "," + posx + "," + posy + "," + posz + "," + rotx + "," + roty + "," + rotz;
 	window.DCubis2.EvalScript(theArgs); 
 }
 

@@ -19,14 +19,22 @@ input{
 右(posX):<input type="text" name="posx" value="">
 上(posY):<input type="text" name="posy" value="">
 後(posZ):<input type="text" name="posz" value="">
+絶対座標指定<input type="checkbox" name="mode" value="">
 反時計回り(rot):<input type="text" name="rot" value="">
-コンテンツへ(cid):<input type="text" name="cid" value="">
 (rotX:<input type="text" name="rotx" value="">
 rotY:<input type="text" name="roty" value="">
 rotZ:<input type="text" name="rotz" value="">)
 <input type="button" value="送信" onclick="evalSample()" name="button">
 </form>
+<form name="content">
+<input type="hidden" name="mode" value="cid">
+コンテンツへ(cid):<input type="text" name="cid" value="">
+<input type="button" value="送信" onclick="cidTest()" name="button">
+</form>
 <form name="ctrl">
+<input type="button" value="full screen" onclick="javascript:fullScreen()">
+<input type="button" value="normal" onclick="javascript:normalScreen()">
+<input type="button" value="restart" onclick="javascript:restart()">
 <input type="button" value="←" onclick="javascript:posx(-30)">
 <input type="button" value="↑" onclick="javascript:posz(-30)">
 <input type="button" value="↓" onclick="javascript:posz(50)">
@@ -153,6 +161,28 @@ if ( ShockMode ) {
 	document.write('</OBJECT>');
 } else if (!(navigator.appName && navigator.appName.indexOf("Netscape")>=0 && navigator.appVersion.indexOf("2.")>=0)){
 	document.write('このコンテンツを表示するために必要なShockwaveバージョンがありません。新しいバージョンに更新してください。');
+}
+function cidTest(){
+  cid(document.content.cid.value);
+}
+function evalSample() {
+	var roty;
+	var mode;
+	if(document.theForm.roty.value != ""){
+		roty = document.theForm.roty.value;
+	}else{
+		roty = document.theForm.rot.value;
+	}
+	if(document.theForm.mode.checked){
+		mode = "absolute2";
+	}
+	DCubisAPI(mode,
+			document.theForm.posx.value, 
+			document.theForm.posy.value,
+			document.theForm.posz.value,
+			document.theForm.rotx.value,
+			roty,
+			document.theForm.rotz.value);
 }
 //-->
 </SCRIPT>
