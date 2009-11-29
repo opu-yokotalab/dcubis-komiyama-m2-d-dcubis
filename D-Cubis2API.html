@@ -11,7 +11,7 @@ input{
 <script type="text/javascript" src="DCubisAPI.js"></script>
 </head>
 <!-- saved from url=(0013)about:internet -->
-<body bgColor="#404040">
+<body bgColor="#404040" onload="startFullScreen(500);">
 
 
 <!-- ここからテスト用コード-->
@@ -24,17 +24,17 @@ input{
 (rotX:<input type="text" name="rotx" value="">
 rotY:<input type="text" name="roty" value="">
 rotZ:<input type="text" name="rotz" value="">)
-<input type="button" value="送信" onclick="evalSample()" name="button">
+<input type="button" value="移動" onclick="evalSample()" name="button">
 </form>
 <form name="content">
 <input type="hidden" name="mode" value="cid">
 コンテンツへ(cid):<input type="text" name="cid" value="">
-<input type="button" value="送信" onclick="cidTest()" name="button">
+<input type="button" value="移動" onclick="cidTest()" name="button">
 </form>
 <form name="ctrl">
-<input type="button" value="full screen" onclick="javascript:fullScreen()">
+<input type="button" value="full" onclick="javascript:fullScreen()">
 <input type="button" value="normal" onclick="javascript:normalScreen()">
-<input type="button" value="restart" onclick="javascript:restart()">
+<input type="button" value="start" onclick="javascript:restart()">
 <input type="button" value="←" onclick="javascript:posx(-30)">
 <input type="button" value="↑" onclick="javascript:posz(-30)">
 <input type="button" value="↓" onclick="javascript:posz(50)">

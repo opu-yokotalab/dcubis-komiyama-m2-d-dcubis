@@ -1,4 +1,10 @@
-﻿function restart(){
+﻿function startFullScreen(waitTime){
+  if(waitTime == undefined){
+    waitTime = 1000;
+  }
+  setTimeout("StartPing()",waitTime);
+}
+function restart(){
   window.DCubis2.EvalScript("restart,,,,,,");
 }
 function fullScreen(){
@@ -22,7 +28,16 @@ function rot(rot){
 function cid(cid){
   window.DCubis2.EvalScript("cid," + cid + ",,,,,");
 }
-
+function StartPing(){
+  var flag = false;
+    while(!flag){
+      try{
+    window.DCubis2.EvalScript("screen,startFull,,,,,");
+        flag = true;
+      }catch(e){
+      }
+    }
+}
 function DCubisAPI(mode,posx,posy,posz,rotx,roty,rotz,cid){
 	var theArgs;
 	theArgs = mode + "," + posx + "," + posy + "," + posz + "," + rotx + "," + roty + "," + rotz;
@@ -32,7 +47,7 @@ function DCubisAPI(mode,posx,posy,posz,rotx,roty,rotz,cid){
 
 function ArgArray(sSource) {
 	/* 初期化処理 */
-	var sAry = new Array();	/* アイテム配列を追加 */
+	var sAry = new Array();
 	{
 		var nCur = 0, nRet = 0;
 		var sSearch = sSource.substr(1);
