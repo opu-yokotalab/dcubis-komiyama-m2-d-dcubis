@@ -1,6 +1,6 @@
 ﻿function startFullScreen(waitTime){
   if(waitTime == undefined){
-    waitTime = 10000;
+    waitTime = 1000;
   }
   setTimeout("StartPing()",waitTime);
 }

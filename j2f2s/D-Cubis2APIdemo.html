@@ -44,6 +44,11 @@ rotZ:<input type="text" name="rotz" value="">)
 <input type="button" value="上" onclick="javascript:posy(10)">
 <input type="button" value="下" onclick="javascript:posy(-10)">
 </form>
+
+<form id ="j2f2s">
+<input type="button" value="testfullscreen" onclick="javascript:testFull('foo');">
+</form>
+<div id="status">message</div>
 <!-- <form name="cidmove">
 コンテンツへ<input type="text" name="oid" value="">
 <input type="button" name="cidbutton" value="移動" onclick="cid(document.cidmove.oid.value.toString())">
@@ -56,6 +61,30 @@ rotZ:<input type="text" name="rotz" value="">)
 //var metaFile = "http://alpha.c.oka-pu.ac.jp/D-Cubis/PublicData/wa/Data/startWaU.xml";
 var metaFile = "http://localhost/Data/startWa_v2.0.xml";
 var ShockMode = 0;
+
+
+////////externalI
+function testFull(argStr) {
+	getMovieName("DCubisLCHTMLas2").DCubisJ2F("FullScreen"); 
+}
+
+function getMovieName(movieName) {
+    if (navigator.appName.indexOf("Microsoft") != -1) {
+        return window[movieName]
+   }
+   else {
+       return document[movieName]
+   }
+}
+function S2JMsg(argd2f){
+ document.getElementById("status").innerHTML=argd2f;
+}
+////////
+
+
+
+
+
 
 if (navigator.mimeTypes && navigator.mimeTypes["application/x-director"] && navigator.mimeTypes["application/x-director"].enabledPlugin) {
 	if (navigator.plugins && navigator.plugins["Shockwave for Director"] && (versionIndex = navigator.plugins["Shockwave for Director"].description.indexOf(".")) != - 1) {
@@ -458,9 +487,9 @@ function AC_GetArgs(args, ext, srcParamName, classid, mimeType){
 }
 	AC_FL_RunContent(
 		'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0',
-		'width', '550',
-		'height', '400',
-		'src', 'DCubisLCHTMLas2',
+		'width', '1',
+		'height', '1',
+		'src', 'DCubisAPIinHTML',
 		'quality', 'high',
 		'pluginspage', 'http://www.adobe.com/go/getflashplayer_jp',
 		'align', 'middle',
@@ -469,23 +498,24 @@ function AC_GetArgs(args, ext, srcParamName, classid, mimeType){
 		'scale', 'showall',
 		'wmode', 'window',
 		'devicefont', 'false',
-		'id', 'DCubisLCHTMLas2',
-		'bgcolor', '#ffffff',
-		'name', 'DCubisLCHTMLas2',
+		'id', 'DCubisAPIinHTML',
+		'bgcolor', '#f0f0f0',
+		'name', 'DCubisAPIinHTML',
 		'menu', 'true',
 		'allowFullScreen', 'false',
-		'allowScriptAccess','sameDomain',
-		'movie', 'DCubisLCHTMLas2',
+		'allowScriptAccess','always',
+		'movie', 'DCubisAPIinHTML',
 		'salign', ''
 		); //end AC code
-</script>
+//-->
+</SCRIPT>
+<noembed>このコンテンツを表示するために必要なShockwaveバージョンがありません。新しいバージョンに更新してください。</noembed>
 <noscript>
-	<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="550" height="400" id="DCubisLCHTMLas2" align="middle">
-	<param name="allowScriptAccess" value="sameDomain" />
+	<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="1" height="1" id="DCubisAPIinHTML" align="middle">
+	<param name="allowScriptAccess" value="always" />
 	<param name="allowFullScreen" value="false" />
-	<param name="movie" value="DCubisLCHTMLas2.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" />	<embed src="DCubisLCHTMLas2.swf" quality="high" bgcolor="#ffffff" width="550" height="400" name="DCubisLCHTMLas2" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_jp" />
+	<param name="movie" value="DCubisAPIinHTML.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#f0f0f0" />	<embed src="DCubisAPIinHTML.swf" quality="high" bgcolor="#f0f0f0" width="1" height="1" name="DCubisAPIinHTML" align="middle" allowScriptAccess="always" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_jp" />
 	</object>
-</noscript>
-
+このコンテンツを表示するために必要なShockwaveバージョンがありません。新しいバージョンに更新してください。</noscript>
 </body>
 </html>
