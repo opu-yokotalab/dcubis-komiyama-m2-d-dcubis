@@ -1,5 +1,11 @@
+readme
+	1.ˆÊ’uEƒRƒ“ƒeƒ“ƒc‹ì“®‚É‚Â‚¢‚Ä
+	2.ƒŠƒAƒ‹ƒ^ƒCƒ€ƒRƒ“ƒgƒ[ƒ‹‚É‚Â‚¢‚Ä
 
-ˆÊ’uEƒRƒ“ƒeƒ“ƒc‹ì“®‚É‚Â‚¢‚Ä
+
+
+
+@1.ˆÊ’uEƒRƒ“ƒeƒ“ƒc‹ì“®‚É‚Â‚¢‚Ä
 
 (‰üCÏ‚ÝƒGƒ“ƒWƒ“‚Æhtml,JavaScriptAƒo[ƒWƒ‡ƒ“11ˆÈãH‚Ìshockwave player‚ª•K—v)
 
@@ -16,3 +22,88 @@ cid‚ÅŽw’è‚µ‚½ê‡‚É‚Â‚¢‚Ä‚ÍAˆÚ“®æ‚ÉƒXƒy[ƒX‚ª‚È‚¢ê‡‚ÍˆÚ“®‚¹‚¸’Êí‚Ì‰ŠúˆÊ’u‚
 
 
 À•WŽw’è‚æ‚è‚àƒRƒ“ƒeƒ“ƒcŽw’è‚ª—Dæ‚³‚ê‚éB
+
+
+
+
+@2.ƒŠƒAƒ‹ƒ^ƒCƒ€ƒRƒ“ƒgƒ[ƒ‹‚É‚Â‚¢‚Ä
+D-CubisAPIŽb’èŽd—l
+
+ŠÖ”
+EstartFullScreen(waitTime)
+	‰{——ŠJŽnŽž‚É‘S‰æ–Êƒ‚[ƒh‚ÉØ‚è‘Ö‚¦‚Ü‚·B‚Ü‚½‚ÍŽw’è”•bŒã‚É‘S‰æ–Ê‚É•ÏX‚µ‚½‚¢‚Æ‚«‚É—˜—p‚µ‚Ü‚·B
+	•‰‰×’áŒ¸‚Ì‚½‚ß‚Éˆø”waitTime‚Éƒ~ƒŠ•b‚Åshockwave movieŠJŽn‚Ü‚Å‚ÌŽžŠÔ‚ðŽw’è‚µ‚Ä‚­‚¾‚³‚¢B
+	Žw’èŽžŠÔŒã‚©‚çmovie‚Ö‚ÌƒAƒNƒZƒXŽŽs‚ðŠJŽn‚µ‚Ü‚·B
+
+EfullScreen()
+	‘S‰æ–Êƒ‚[ƒh‚ÉØ‚è‘Ö‚¦‚Ü‚·B
+
+EnormalScreen()
+	‘S‰æ–Êƒ‚[ƒh‚©‚ç’Êí‰æ–Ê•\Ž¦‚ÉØ‚è‘Ö‚¦‚Ü‚·B
+
+Eposx(posx)
+	‰{——ŽÒŽ‹“_‚Å¶‰E•ûŒü‚ÖposxˆÚ“®‚µ‚Ü‚·B‰E‚ª³‚Å‚·B
+
+Eposy(posy)
+	‰{——ŽÒŽ‹“_‚Åã‰º•ûŒü‚ÉposyˆÚ“®‚µ‚Ü‚·Bã‚ª³‚Å‚·B
+
+Eposz(posz)
+	‰{——ŽÒŽ‹“_‚Å‘OŒã•ûŒü‚ÉposzˆÚ“®‚µ‚Ü‚·BŒã‚ë‚ª³‚Å‚·B
+
+Erot(rot)
+	‰{——ŽÒŽ‹“_‚Å(…•½‚É)rot‹‰ñ“]‚µ‚Ü‚·B”½ŽžŒv‰ñ‚è‚ª³‚Å‚·B
+
+EDCubisAPI(mode,posx,posy,posz,rotx,roty,rotz,cid)
+	–{ŠÖ”‚É‚æ‚èD-CubisƒGƒ“ƒWƒ“(D-Cubis2.dcr)‚Öƒf[ƒ^‚ð‘—M‚µ‚Ü‚·B
+
+Ecid(cid)
+	Žw’è‚µ‚½cid‚ÌƒRƒ“ƒeƒ“ƒc‚ªŒ©‚¦‚éˆÊ’u‚ÉˆÚ“®‚µ‚Ü‚·B
+
+ˆø”
+	mode : 
+		"screen"	:‰æ–Ê•\Ž¦‚ÌƒRƒ“ƒgƒ[ƒ‹
+		"absolute"	:â‘ÎÀ•WŒn
+		"absolute2"	:‰{——ŠJŽnŽžŠî€‚Ìâ‘ÎÀ•WBâ‘ÎÀ•W‚©‚çã‚É-50
+		"relative"	:‘Š‘ÎˆÊ’u‚ÉˆÚ“®
+		""		:relative‚Æ“¯‚¶
+	posx : ‰E•ûŒüˆÊ’u
+		mode = "screen"‚Ìê‡
+		"full"		:‘S‰æ–Ê•\Ž¦‚É•ÏX
+		"normal"	:’Êí‰æ–Ê‚É•ÏX
+		"startFull"	:‰{——ŠJŽnŽž‚Éƒtƒ‹ƒXƒNƒŠ[ƒ“‚ÉØ‚è‘Ö‚¦‚Ü‚·B
+				 ŽÀŒø¬Œ÷Žž‚É•ÏX‚³‚ê‚é‚Ì‚Íƒtƒ‰ƒO‚Ì‚Ý‚ÅAŽÀÛ‚Ì•ÏX‚ÍÄ¶ƒtƒŒ[ƒ€‚ÌÅŒã‚É“ž’B‚µ‚½Žž“_‚Å‚·B
+	posy : c•ûŒüˆÊ’u
+	posz : Œã‚ë•ûŒüˆÊ’u
+	rotx : x‰ñ“](Žg‚í‚È‚¢•û‚ª—Ç‚¢)
+	roty : ”½ŽžŒv•ûŒü‰ñ“]
+	rotz : z‰ñ“](Žg‚í‚È‚¢•û‚ª—Ç‚¢)
+	cid  : ƒRƒ“ƒeƒ“ƒcIDiCOD‚ÅŽw’èj
+
+
+Šî–{‚ÍˆÈ‰º‚ÌŠÖ”‚Å‚·B(live connect)
+window.DCubis2.EvalScript(theArgs);
+	theArgs : "mode,posx,posy,posz,rotx,roty,rotz,cid"‘Ž®‚Ì•¶Žš—ñ(”¼ŠpƒJƒ“ƒ}‹æØ‚è)
+
+EIE‚Ì‚Ý‚Å“®ì‚µ‚Ü‚·B
+E®”’l‚Ü‚½‚ÍNULL("")‚Ì‚Ýˆø”‚Æ‚µ‚Ä‚­‚¾‚³‚¢B(cid,mode,posx‚ðœ‚­)
+EŒ»Ýjumpˆ—“™‚Í‚ ‚è‚Ü‚¹‚ñB
+E–{Žd—l‚ÍŽb’è‚Å‚·B¡Œã‘å•‚É•ÏX‚·‚é‰Â”\«‚ª‚ ‚è‚Ü‚·B
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

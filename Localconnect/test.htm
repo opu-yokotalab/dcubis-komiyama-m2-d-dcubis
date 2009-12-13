@@ -4,6 +4,25 @@
 <title>DCubisLCHTMLas2</title>
 <script language="JavaScript" type="text/javascript">
 <!--
+function callExternalInterface() {
+	getMovieName("DCubisLCHTMLas2").testj2f("test"); 
+}
+
+function getMovieName(movieName) {
+    if (navigator.appName.indexOf("Microsoft") != -1) {
+        return window[movieName]
+   }
+   else {
+       return document[movieName]
+   }
+}
+function moo(argd2f){
+ document.getElementById("foo").innerHTML=argd2f;
+}
+
+
+
+
 //v1.7
 // Flash Player Version Detection
 // Detect Client Browser type
@@ -302,16 +321,16 @@ function AC_GetArgs(args, ext, srcParamName, classid, mimeType){
 		'name', 'DCubisLCHTMLas2',
 		'menu', 'true',
 		'allowFullScreen', 'false',
-		'allowScriptAccess','sameDomain',
+		'allowScriptAccess','always',
 		'movie', 'DCubisLCHTMLas2',
 		'salign', ''
 		); //end AC code
 </script>
 <noscript>
 	<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="550" height="400" id="DCubisLCHTMLas2" align="middle">
-	<param name="allowScriptAccess" value="sameDomain" />
+	<param name="allowScriptAccess" value="always" />
 	<param name="allowFullScreen" value="false" />
-	<param name="movie" value="DCubisLCHTMLas2.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" />	<embed src="DCubisLCHTMLas2.swf" quality="high" bgcolor="#ffffff" width="550" height="400" name="DCubisLCHTMLas2" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_jp" />
+	<param name="movie" value="DCubisLCHTMLas2.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" />	<embed src="DCubisLCHTMLas2.swf" quality="high" bgcolor="#ffffff" width="550" height="400" name="DCubisLCHTMLas2" align="middle" allowScriptAccess="always" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_jp" />
 	</object>
 </noscript>
 <object classid="clsid:233C1507-6A77-46A4-9443-F871F945D258"
@@ -325,5 +344,10 @@ function AC_GetArgs(args, ext, srcParamName, classid, mimeType){
 <embed src="LCtest.dcr" bgColor=#FFFFFF swStretchHAlign=Center swStretchVAlign=Top  width=640 height=480 swRemote="swSaveEnabled='true' swVolume='true' swRestart='true' swPausePlay='true' swFastForward='true' swContextMenu='true' " swStretchStyle=meet
  type="application/x-director" PlayerVersion=11 pluginspage="http://www.macromedia.com/shockwave/download/"></embed>
 </object>
+
+<form>
+<input type="button" name ="test" onclick="javascript:callExternalInterface();" />
+</form>
+<div id ="foo">test</div>
 </body>
 </html>
