@@ -71,7 +71,7 @@ D-CubisAPI暫定仕様
 		"full"		:全画面表示に変更
 		"normal"	:通常画面に変更
 		"startFull"	:閲覧開始時にフルスクリーンに切り替えます。
-				 実効成功時に変更されるのはフラグのみで、実際の変更は再生フレームの最後に到達した時点です。
+
 	posy : 縦方向位置
 	posz : 後ろ方向位置
 	rotx : x回転(使わない方が良い)
@@ -85,7 +85,7 @@ window.DCubis2.EvalScript(theArgs);
 	theArgs : "mode,posx,posy,posz,rotx,roty,rotz,cid"書式の文字列(半角カンマ区切り)
 
 ・IEのみで動作します。
-・整数値またはNULL("")のみ引数としてください。(cid,mode,posxを除く)
+・半角整数値またはNULL("")のみ引数としてください。(cid,mode,posxを除く)
 ・現在jump処理等はありません。
 ・本仕様は暫定です。今後大幅に変更する可能性があります。
 
