@@ -1,4 +1,48 @@
-﻿function startFullScreen(waitTime){
+﻿//localconnection
+function callExternalInterface() {
+	getMovieName("DCubisAPIinHTML").DCubisJ2F("test"); 
+}
+
+function getMovieName(movieName) {
+    if (navigator.appName.indexOf("Microsoft") != -1) {
+        return window[movieName]
+   }
+   else {
+       return document[movieName]
+   }
+
+//	return document.getElementById("DCubisAPIinHTML");
+}
+
+function restart(){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("restart","","","","","",""); 
+}
+function fullScreen(){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("screen","full","","","","","");
+}
+function normalScreen(){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("screen","normal","","","","","");
+}
+function posx(posx){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative",posx,"","","","","");
+}
+function posy(posy){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative","",posy,"","","","");
+}
+function posz(posz){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative","","",posz,"","","");
+}
+function rot(rot){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative","","","","",rot,"");
+}
+function cid(cid){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("cid",cid ,"","","","","");
+}
+
+
+/*
+//live connect
+function startFullScreen(waitTime){
   if(waitTime == undefined){
     waitTime = 10000;
   }
@@ -38,12 +82,12 @@ function StartPing(){
       }
     }
 }
-function DCubisAPI(mode,posx,posy,posz,rotx,roty,rotz,cid){
+function DCubisAPI(mode,posx,posy,posz,rotx,roty,rotz){
 	var theArgs;
 	theArgs = mode + "," + posx + "," + posy + "," + posz + "," + rotx + "," + roty + "," + rotz;
 	window.DCubis2.EvalScript(theArgs); 
 }
-
+*/
 
 function ArgArray(sSource) {
 	/* 初期化処理 */

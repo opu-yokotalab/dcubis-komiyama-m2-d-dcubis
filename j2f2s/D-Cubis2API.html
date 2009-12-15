@@ -54,23 +54,11 @@ rotZ:<input type="text" name="rotz" value="">)
 
 <script language=JavaScript>
 <!--
-//var metaFile = "http://alpha.c.oka-pu.ac.jp/D-Cubis/PublicData/wa/Data/startWaU.xml";
-var metaFile = "http://localhost/Data/startWa_v2.0.xml";
+var metaFile = "http://alpha.c.oka-pu.ac.jp/D-Cubis/PublicData/wa/Data/startWaU.xml";
+//var metaFile = "http://localhost/Data/startWa_v2.0.xml";
 var ShockMode = 0;
 
-function callExternalInterface() {
-	getMovieName("DCubisAPIinHTML").DCubisJ2F("test"); 
-}
-
-function getMovieName(movieName) {
-    if (navigator.appName.indexOf("Microsoft") != -1) {
-        return window[movieName]
-   }
-   else {
-       return document[movieName]
-   }
-}
-function moo(argd2f){
+function S2JMsg(argd2f){
  document.getElementById("foo").innerHTML=argd2f;
 }
 
@@ -498,14 +486,14 @@ function AC_GetArgs(args, ext, srcParamName, classid, mimeType){
 //-->
 </script>
 <noscript>
-	<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="550" height="400" id="DCubisLCHTMLas2" align="middle">
+	<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="550" height="400" id="DCubisAPIinHTML" align="middle">
 	<param name="allowScriptAccess" value="always" />
 	<param name="allowFullScreen" value="false" />
-	<param name="movie" value="DCubisAPIinHTML.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" />	<embed src="DCubisAPIinHTML.swf" quality="high" bgcolor="#ffffff" width="550" height="400" name="DCubisLCHTMLas2" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_jp" />
+	<param name="movie" value="DCubisAPIinHTML.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" />	<embed src="DCubisAPIinHTML.swf" quality="high" bgcolor="#ffffff" width="550" height="400" name="DCubisAPIinHTML" align="middle" allowScriptAccess="always" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_jp" />
 	</object>
 </noscript>
 <form>
-<input type="button" name ="test" onclick="javascript:callExternalInterface();" />
+<input type="button" name ="test" onclick="javascript:fullScreen();" />
 </form>
 <div id ="foo">test</div>
 
