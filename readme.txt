@@ -66,12 +66,15 @@ D-CubisAPI暫定仕様
 		"absolute2"	:閲覧開始時基準の絶対座標。絶対座標から上に-50
 		"relative"	:相対位置に移動
 		""		:relativeと同じ
+		"restart"	:開始位置へ移動
+		"cid"		:コンテンツへ移動
 	posx : 右方向位置
 		mode = "screen"の場合
 		"full"		:全画面表示に変更
 		"normal"	:通常画面に変更
 		"startFull"	:閲覧開始時にフルスクリーンに切り替えます。
-
+		mode = "cid"の場合
+				:コンテンツidを指定してください。	
 	posy : 縦方向位置
 	posz : 後ろ方向位置
 	rotx : x回転(使わない方が良い)
