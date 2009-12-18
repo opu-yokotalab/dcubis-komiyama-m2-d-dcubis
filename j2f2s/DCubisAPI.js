@@ -11,11 +11,11 @@ function normalScreen(){
   getMovieName("DCubisAPIinHTML").DCubisJ2F("screen","normal","","","","","");
 }
 //前へ
-function forward(posx){
+function forward(posz){
   getMovieName("DCubisAPIinHTML").DCubisJ2F("relative","","",-posz,"","","");
 }
 //後ろへ
-function back(posx){
+function back(posz){
   getMovieName("DCubisAPIinHTML").DCubisJ2F("relative","","",posz,"","","");
 }
 //上へ
@@ -27,11 +27,11 @@ function down(posy){
   getMovieName("DCubisAPIinHTML").DCubisJ2F("relative","",-posy,"","","","");
 }
 //右へ
-function rotationR(posz){
+function right(posx){
   getMovieName("DCubisAPIinHTML").DCubisJ2F("relative",posx,"","","","","");
 }
 //左へ
-function rotationL(posz){
+function left(posx){
   getMovieName("DCubisAPIinHTML").DCubisJ2F("relative",-posx,"","","","","");
 }
 //右回転
@@ -50,7 +50,7 @@ function cid(cid){
 function absolute(posx,posy,posz,rotx,roty,rotz){
   getMovieName("DCubisAPIinHTML").DCubisJ2F("absolute",posx,posy,posz,rotx,roty,rotz);
 }
-//絶対位置移動から閲覧開始の高さに修正した移動
+//絶対位置移動から閲覧開始の高さを基準に修正した移動
 function absolute2(posx,posy,posz,rotx,roty,rotz){
   getMovieName("DCubisAPIinHTML").DCubisJ2F("absolute2",posx,posy,posz,rotx,roty,rotz);
 }
