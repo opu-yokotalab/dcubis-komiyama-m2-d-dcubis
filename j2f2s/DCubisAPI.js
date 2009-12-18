@@ -1,8 +1,66 @@
-﻿//localconnection
-function callExternalInterface() {
-	getMovieName("DCubisAPIinHTML").DCubisJ2F("test"); 
+﻿//初期位置へ戻る
+function restart(){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("restart","","","","","",""); 
+}
+//フルスクリーンに変更
+function fullScreen(){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("screen","full","","","","","");
+}
+//通常画面に変更
+function normalScreen(){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("screen","normal","","","","","");
+}
+//前へ
+function forward(posx){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative","","",-posz,"","","");
+}
+//後ろへ
+function back(posx){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative","","",posz,"","","");
+}
+//上へ
+function up(posy){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative","",posy,"","","","");
+}
+//下へ
+function down(posy){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative","",-posy,"","","","");
+}
+//右へ
+function rotationR(posz){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative",posx,"","","","","");
+}
+//左へ
+function rotationL(posz){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative",-posx,"","","","","");
+}
+//右回転
+function turnR(rot){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative","","","","",rot,"");
+}
+//左回転
+function turnL(rot){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative","","","","",rot,"");
+}
+//コンテンツへ移動
+function cid(cid){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("cid",cid ,"","","","","");
+}
+//空間内の座標基準絶対位置移動
+function absolute(posx,posy,posz,rotx,roty,rotz){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("absolute",posx,posy,posz,rotx,roty,rotz);
+}
+//絶対位置移動から閲覧開始の高さに修正した移動
+function absolute2(posx,posy,posz,rotx,roty,rotz){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("absolute2",posx,posy,posz,rotx,roty,rotz);
+}
+//相対移動
+function relative(posx,posy,posz,rotx,roty,rotz){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative",posx,posy,posz,rotx,roty,rotz);
 }
 
+
+//localconnection
 function getMovieName(movieName) {
     if (navigator.appName.indexOf("Microsoft") != -1) {
         return window[movieName]
@@ -10,10 +68,10 @@ function getMovieName(movieName) {
    else {
        return document[movieName]
    }
-
 //	return document.getElementById("DCubisAPIinHTML");
 }
 
+//以前の互換
 function restart(){
   getMovieName("DCubisAPIinHTML").DCubisJ2F("restart","","","","","",""); 
 }
@@ -42,6 +100,21 @@ function cid(cid){
 
 /*
 //live connect
+function evalSample() {
+	var roty;
+	if(document.theForm.roty.value != ""){
+		roty = document.theForm.roty.value;
+	}else{
+		roty = document.theForm.rot.value;
+	}
+	DCubisAPI(document.theForm.posx.value, 
+			document.theForm.posy.value,
+			document.theForm.posz.value,
+			document.theForm.rotx.value,
+			roty,
+			document.theForm.rotz.value,
+			document.theForm.cid.value);
+}
 function startFullScreen(waitTime){
   if(waitTime == undefined){
     waitTime = 10000;
@@ -88,7 +161,7 @@ function DCubisAPI(mode,posx,posy,posz,rotx,roty,rotz){
 	window.DCubis2.EvalScript(theArgs); 
 }
 */
-
+//URL引数を処理
 function ArgArray(sSource) {
 	/* 初期化処理 */
 	var sAry = new Array();

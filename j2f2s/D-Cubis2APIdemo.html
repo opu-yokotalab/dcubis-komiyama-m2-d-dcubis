@@ -12,19 +12,82 @@ input{
 </head>
 <!-- saved from url=(0013)about:internet -->
 <body bgColor="#404040">
+<!-- onload="startFullScreen(10000);"> -->
+
+
+<!-- ここからテスト用コード-->
+<form name="theForm">
+右(posX):<input type="text" name="posx" value="">
+上(posY):<input type="text" name="posy" value="">
+後(posZ):<input type="text" name="posz" value="">
+絶対座標指定<input type="checkbox" name="mode" value="">
+反時計回り(rot):<input type="text" name="rot" value="">
+(rotX:<input type="text" name="rotx" value="">
+rotY:<input type="text" name="roty" value="">
+rotZ:<input type="text" name="rotz" value="">)
+<input type="button" value="移動" onclick="Sample()" name="button">
+</form>
+<form name="content">
+<input type="hidden" name="mode" value="cid">
+コンテンツへ(cid):<input type="text" name="cid" value="">
+<input type="button" value="移動" onclick="cidTest()" name="button">
+</form>
+<form name="ctrl">
+<input type="button" value="full" onclick="javascript:fullScreen()">
+<input type="button" value="normal" onclick="javascript:normalScreen()">
+<input type="button" value="start" onclick="javascript:restart()">
+<input type="button" value="←" onclick="javascript:posx(-30)">
+<input type="button" value="↑" onclick="javascript:posz(-30)">
+<input type="button" value="↓" onclick="javascript:posz(50)">
+<input type="button" value="→" onclick="javascript:posx(50)">
+<input type="button" value="&#x21ba;" onclick="javascript:rot(4)">
+<input type="button" value="&#x21bb;" onclick="javascript:rot(-4)">
+<input type="button" value="上" onclick="javascript:posy(10)">
+<input type="button" value="下" onclick="javascript:posy(-10)">
+</form>
+<!-- ここまでテスト用コード-->
+
+
 <script language=JavaScript>
 <!--
 var metaFile;
 //メタファイルを指定
 //metaFile = "http://alpha.c.oka-pu.ac.jp/D-Cubis/PublicData/wa/Data/startWaU.xml";
 metaFile = "http://localhost/Data/startWa_v2.0.xml";
-
 var ShockMode = 0;
 
 //shockwaveからの返り値args2fを使うための関数
 function S2JMsg(args2f){
  //document.getElementById("foo").innerHTML=args2f;
 }
+
+//デモ用の関数
+function Sample(){
+	var roty;
+	var order = "relative";
+	if(document.theForm.roty.value != ""){
+		roty = document.theForm.roty.value;
+	}else{
+		roty = document.theForm.rot.value;
+	}
+	if(document.theForm.mode.checked){
+		order ="absolute2"
+	}
+  	getMovieName("DCubisAPIinHTML").DCubisJ2F(
+			order,
+			document.theForm.posx.value, 
+			document.theForm.posy.value,
+			document.theForm.posz.value,
+			document.theForm.rotx.value,
+			roty,
+			document.theForm.rotz.value);
+}
+function cidTest(){
+  cid(document.content.cid.value);
+}
+//ここまでデモ用
+
+
 
 if (navigator.mimeTypes && navigator.mimeTypes["application/x-director"] && navigator.mimeTypes["application/x-director"].enabledPlugin) {
 	if (navigator.plugins && navigator.plugins["Shockwave for Director"] && (versionIndex = navigator.plugins["Shockwave for Director"].description.indexOf(".")) != - 1) {
@@ -442,5 +505,7 @@ function AC_GetArgs(args, ext, srcParamName, classid, mimeType){
 	<param name="movie" value="DCubisAPIinHTML.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" />	<embed src="DCubisAPIinHTML.swf" quality="high" bgcolor="#ffffff" width="1" height="1" name="DCubisAPIinHTML" align="middle" allowScriptAccess="always" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_jp" />
 	</object>
 </noscript>
+<!-- 返り値テスト -->
+<div id ="foo"></div>
 </body>
 </html>
