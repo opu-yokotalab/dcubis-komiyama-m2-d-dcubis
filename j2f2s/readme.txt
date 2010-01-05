@@ -7,7 +7,7 @@ readme
 
 (‰üCÏ‚ÝƒGƒ“ƒWƒ“‚Æhtml,JavaScriptAƒo[ƒWƒ‡ƒ“11ˆÈãH‚Ìshockwave player‚ª•K—v)
 
- (html‚ÌURL)?posx=(XÀ•W)&posy=(YÀ•W)&posz=(ZÀ•W)&rotx=(X‰ñ“])&roty=(Y‰ñ“])&rotz=(Z‰ñ“])&rot=(Y‰ñ“])&cid=(ƒRƒ“ƒeƒ“ƒcID)&sfs=(utruev‚Ü‚½‚Í‚»‚êˆÈŠO)
+ (html‚ÌURL)?posx=(XÀ•W)&posy=(YÀ•W)&posz=(ZÀ•W)&rotx=(X‰ñ“])&roty=(Y‰ñ“])&rotz=(Z‰ñ“])&rot=(Y‰ñ“])&cid=(ƒRƒ“ƒeƒ“ƒcID)&sfs=(ƒtƒ‹ƒXƒNƒŠ[ƒ“‚ÅŠJŽnutruev‚Ü‚½‚ÍtrueˆÈŠO‚Å’Êí)
 —á
 http://localhost/D-Cubis2-1.html?posx=-525&posy=10&rot=60
 http://localhost/D-Cubis2-1.html?cid=s002
@@ -21,7 +21,7 @@ cid‚ÅŽw’è‚µ‚½ê‡‚É‚Â‚¢‚Ä‚ÍAˆÚ“®æ‚ÉƒXƒy[ƒX‚ª‚È‚¢ê‡‚ÍˆÚ“®‚¹‚¸’Êí‚Ì‰ŠúˆÊ’u‚
 
 À•WŽw’è‚æ‚è‚àƒRƒ“ƒeƒ“ƒcŽw’è‚ª—Dæ‚³‚ê‚éB
 
-sfs‚Íƒtƒ‹ƒXƒNƒŠ[ƒ“‚ÅŠJŽn‚·‚é‚à‚Ì‚Å‚·B
+sfs‚Íƒtƒ‹ƒXƒNƒŠ[ƒ“‚ÅŠJŽn‚·‚é‚½‚ß‚ÉŽg—p‚µ‚Ü‚·B
 
 
 @2.ƒŠƒAƒ‹ƒ^ƒCƒ€ƒRƒ“ƒgƒ[ƒ‹‚É‚Â‚¢‚Ä
