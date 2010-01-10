@@ -1,6 +1,123 @@
-﻿function startFullScreen(waitTime){
+﻿//初期位置へ戻る
+function restart(){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("restart","","","","","",""); 
+}
+//フルスクリーンに変更
+function fullScreen(){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("screen","full","","","","","");
+}
+//通常画面に変更
+function normalScreen(){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("screen","normal","","","","","");
+}
+//前へ
+function forward(posz){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative","","",-posz,"","","");
+}
+//後ろへ
+function back(posz){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative","","",posz,"","","");
+}
+//上へ
+function up(posy){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative","",posy,"","","","");
+}
+//下へ
+function down(posy){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative","",-posy,"","","","");
+}
+//右へ
+function right(posx){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative",posx,"","","","","");
+}
+//左へ
+function left(posx){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative",-posx,"","","","","");
+}
+//右回転
+function turnR(rot){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative","","","","",rot,"");
+}
+//左回転
+function turnL(rot){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative","","","","",rot,"");
+}
+//コンテンツへ移動
+function cid(cid){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("cid",cid ,"","","","","");
+}
+//空間内の座標基準絶対位置移動
+function absolute(posx,posy,posz,rotx,roty,rotz){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("absolute",posx,posy,posz,rotx,roty,rotz);
+}
+//絶対位置移動から閲覧開始の高さを基準に修正した移動
+function absolute2(posx,posy,posz,rotx,roty,rotz){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("absolute2",posx,posy,posz,rotx,roty,rotz);
+}
+//相対移動
+function relative(posx,posy,posz,rotx,roty,rotz){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative",posx,posy,posz,rotx,roty,rotz);
+}
+
+
+//localconnection
+function getMovieName(movieName) {
+    if (navigator.appName.indexOf("Microsoft") != -1) {
+        return window[movieName]
+   }
+   else {
+       return document[movieName]
+   }
+//	return document.getElementById("DCubisAPIinHTML");
+}
+
+//以前の互換
+function restart(){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("restart","","","","","",""); 
+}
+function fullScreen(){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("screen","full","","","","","");
+}
+function normalScreen(){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("screen","normal","","","","","");
+}
+function posx(posx){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative",posx,"","","","","");
+}
+function posy(posy){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative","",posy,"","","","");
+}
+function posz(posz){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative","","",posz,"","","");
+}
+function rot(rot){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative","","","","",rot,"");
+}
+function cid(cid){
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("cid",cid ,"","","","","");
+}
+
+
+/*
+//live connect
+function evalSample() {
+	var roty;
+	if(document.theForm.roty.value != ""){
+		roty = document.theForm.roty.value;
+	}else{
+		roty = document.theForm.rot.value;
+	}
+	DCubisAPI(document.theForm.posx.value, 
+			document.theForm.posy.value,
+			document.theForm.posz.value,
+			document.theForm.rotx.value,
+			roty,
+			document.theForm.rotz.value,
+			document.theForm.cid.value);
+}
+function startFullScreen(waitTime){
   if(waitTime == undefined){
-    waitTime = 1000;
+    waitTime = 10000;
   }
   setTimeout("StartPing()",waitTime);
 }
@@ -38,13 +155,13 @@ function StartPing(){
       }
     }
 }
-function DCubisAPI(mode,posx,posy,posz,rotx,roty,rotz,cid){
+function DCubisAPI(mode,posx,posy,posz,rotx,roty,rotz){
 	var theArgs;
 	theArgs = mode + "," + posx + "," + posy + "," + posz + "," + rotx + "," + roty + "," + rotz;
 	window.DCubis2.EvalScript(theArgs); 
 }
-
-
+*/
+//URL引数を処理
 function ArgArray(sSource) {
 	/* 初期化処理 */
 	var sAry = new Array();

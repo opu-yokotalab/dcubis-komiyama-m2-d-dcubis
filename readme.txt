@@ -3,18 +3,16 @@ readme
 	2.ƒŠƒAƒ‹ƒ^ƒCƒ€ƒRƒ“ƒgƒ[ƒ‹‚É‚Â‚¢‚Ä
 
 
-
-
 @1.ˆÊ’uEƒRƒ“ƒeƒ“ƒc‹ì“®‚É‚Â‚¢‚Ä
 
 (‰üCÏ‚ÝƒGƒ“ƒWƒ“‚Æhtml,JavaScriptAƒo[ƒWƒ‡ƒ“11ˆÈãH‚Ìshockwave player‚ª•K—v)
 
- (html‚ÌURL)?posx=(XÀ•W)&posy=(YÀ•W)&posz=(ZÀ•W)&rotx=(X‰ñ“])&roty=(Y‰ñ“])&rotz=(Z‰ñ“])&rot=(Y‰ñ“])&cid=(ƒRƒ“ƒeƒ“ƒcID)
+ (html‚ÌURL)?posx=(XÀ•W)&posy=(YÀ•W)&posz=(ZÀ•W)&rotx=(X‰ñ“])&roty=(Y‰ñ“])&rotz=(Z‰ñ“])&rot=(Y‰ñ“])&cid=(ƒRƒ“ƒeƒ“ƒcID)&sfs=(ƒtƒ‹ƒXƒNƒŠ[ƒ“‚ÅŠJŽnutruev‚Ü‚½‚ÍtrueˆÈŠO‚Å’Êí)
 —á
 http://localhost/D-Cubis2-1.html?posx=-525&posy=10&rot=60
 http://localhost/D-Cubis2-1.html?cid=s002
 
-posx,posy,posz‚Í‰ŠúˆÊ’u‚ðŒ´“_‚Æ‚µ‚½À•WB(‰Šú’l‚©‚ç‚Ì‹——£)
+posx,posy,posz‚Í‰ŠúˆÊ’u‚ðŒ´“_‚Æ‚µ‚½shockwave movieã‚ÌÀ•WB(‰Šú’l‚©‚ç‚Ì‹——£)B
 ƒRƒ“ƒeƒ“ƒcID‚ÍCOD‚Å•t—^‚µ‚½‚à‚ÌB
 
 
@@ -23,23 +21,63 @@ cid‚ÅŽw’è‚µ‚½ê‡‚É‚Â‚¢‚Ä‚ÍAˆÚ“®æ‚ÉƒXƒy[ƒX‚ª‚È‚¢ê‡‚ÍˆÚ“®‚¹‚¸’Êí‚Ì‰ŠúˆÊ’u‚
 
 À•WŽw’è‚æ‚è‚àƒRƒ“ƒeƒ“ƒcŽw’è‚ª—Dæ‚³‚ê‚éB
 
-
+sfs‚Íƒtƒ‹ƒXƒNƒŠ[ƒ“‚ÅŠJŽn‚·‚é‚½‚ß‚ÉŽg—p‚µ‚Ü‚·B
 
 
 @2.ƒŠƒAƒ‹ƒ^ƒCƒ€ƒRƒ“ƒgƒ[ƒ‹‚É‚Â‚¢‚Ä
-D-CubisAPIŽb’èŽd—l
+(‰üCÏ‚ÝƒGƒ“ƒWƒ“‚Æhtml,JavaScriptAƒo[ƒWƒ‡ƒ“11ˆÈãH‚Ìshockwave playerAFlash player‚ª•K—v)
+html(javascript‚Æhtmlã‚ÌFlash(external interface)A
+htmlã‚ÌFlash‚ÆD-CubisƒGƒ“ƒWƒ““à‚ÌFlash‚Å‚Ì’ÊM(localconnection)‚ðs‚¤‚±‚Æ‚ÅŠO•”‚©‚ç‚ÌƒRƒ“ƒgƒ[ƒ‹‚ðŽÀŒ»‚µ‚Ä‚¢‚Ü‚·B)
 
-ŠÖ”
-EstartFullScreen(waitTime)
-	‰{——ŠJŽnŽž‚É‘S‰æ–Êƒ‚[ƒh‚ÉØ‚è‘Ö‚¦‚Ü‚·B‚Ü‚½‚ÍŽw’è”•bŒã‚É‘S‰æ–Ê‚É•ÏX‚µ‚½‚¢‚Æ‚«‚É—˜—p‚µ‚Ü‚·B
-	•‰‰×’áŒ¸‚Ì‚½‚ß‚Éˆø”waitTime‚Éƒ~ƒŠ•b‚Åshockwave movieŠJŽn‚Ü‚Å‚ÌŽžŠÔ‚ðŽw’è‚µ‚Ä‚­‚¾‚³‚¢B
-	Žw’èŽžŠÔŒã‚©‚çmovie‚Ö‚ÌƒAƒNƒZƒXŽŽs‚ðŠJŽn‚µ‚Ü‚·B
+Šî–{‚ÍŽŸ‚ÌŠÖ”‚Å‚·B(Localconnection)
+(Flash‚Ì—v‘f).DCubisJ2F(order,suborder,posy,posz,rotx,roty,rotz);
+
 
 EfullScreen()
 	‘S‰æ–Êƒ‚[ƒh‚ÉØ‚è‘Ö‚¦‚Ü‚·B
 
 EnormalScreen()
-	‘S‰æ–Êƒ‚[ƒh‚©‚ç’Êí‰æ–Ê•\Ž¦‚ÉØ‚è‘Ö‚¦‚Ü‚·B
+	’Êí‰æ–Ê‚É•ÏXB
+
+Erestart()
+	‰ŠúˆÊ’u‚Ö–ß‚éB
+
+Eforward(posz)
+	‘OiB
+
+Eback(posz)
+	Œã‘ÞB
+
+Eup(posy)
+	ã¸B
+
+Edown(posy)
+	‰º~B
+
+Eright(posx)
+	‰E‚ÖB
+
+Eleft(posx)
+	¶‚ÖB
+
+EturnR(rot)
+	‰E‰ñ“]B
+
+EturnL(rot)
+	¶‰ñ“]B
+
+Ecid(cid)
+	ƒRƒ“ƒeƒ“ƒc‚ÖˆÚ“®B
+
+Eabsolute(posx,posy,posz,rotx,roty,rotz)
+	‹óŠÔ“à‚ÌÀ•WŠî€â‘ÎˆÊ’uˆÚ“®B
+
+Eabsolute2(posx,posy,posz,rotx,roty,rotz)
+	â‘ÎˆÊ’uˆÚ“®‚©‚ç‰{——ŠJŽn‚Ì‚‚³‚ðŠî€‚ÉC³‚µ‚½ˆÚ“®B
+
+Erelative(posx,posy,posz,rotx,roty,rotz)
+	‘Š‘ÎˆÚ“®B
+
 
 Eposx(posx)
 	‰{——ŽÒŽ‹“_‚Å¶‰E•ûŒü‚ÖposxˆÚ“®‚µ‚Ü‚·B‰E‚ª³‚Å‚·B
@@ -53,44 +91,40 @@ D-CubisAPIŽb’èŽd—l
 Erot(rot)
 	‰{——ŽÒŽ‹“_‚Å(…•½‚É)rot‹‰ñ“]‚µ‚Ü‚·B”½ŽžŒv‰ñ‚è‚ª³‚Å‚·B
 
-EDCubisAPI(mode,posx,posy,posz,rotx,roty,rotz,cid)
-	–{ŠÖ”‚É‚æ‚èD-CubisƒGƒ“ƒWƒ“(D-Cubis2.dcr)‚Öƒf[ƒ^‚ð‘—M‚µ‚Ü‚·B
-
 Ecid(cid)
 	Žw’è‚µ‚½cid‚ÌƒRƒ“ƒeƒ“ƒc‚ªŒ©‚¦‚éˆÊ’u‚ÉˆÚ“®‚µ‚Ü‚·B
 
 ˆø”
-	mode : 
+	command : 
 		"screen"	:‰æ–Ê•\Ž¦‚ÌƒRƒ“ƒgƒ[ƒ‹
 		"absolute"	:â‘ÎÀ•WŒn
 		"absolute2"	:‰{——ŠJŽnŽžŠî€‚Ìâ‘ÎÀ•WBâ‘ÎÀ•W‚©‚çã‚É-50
 		"relative"	:‘Š‘ÎˆÊ’u‚ÉˆÚ“®
-		""		:relative‚Æ“¯‚¶
 		"restart"	:ŠJŽnˆÊ’u‚ÖˆÚ“®
 		"cid"		:ƒRƒ“ƒeƒ“ƒc‚ÖˆÚ“®
-	posx : ‰E•ûŒüˆÊ’u
-		mode = "screen"‚Ìê‡
-		"full"		:‘S‰æ–Ê•\Ž¦‚É•ÏX
-		"normal"	:’Êí‰æ–Ê‚É•ÏX
-		"startFull"	:‰{——ŠJŽnŽž‚Éƒtƒ‹ƒXƒNƒŠ[ƒ“‚ÉØ‚è‘Ö‚¦‚Ü‚·B
-		mode = "cid"‚Ìê‡
-				:ƒRƒ“ƒeƒ“ƒcid‚ðŽw’è‚µ‚Ä‚­‚¾‚³‚¢B	
+	subcommand(posx) :
+		command = "screen"‚Ìê‡
+			"full"		:‘S‰æ–Ê•\Ž¦‚É•ÏX
+			"normal"	:’Êí‰æ–Ê‚É•ÏX
+		command = "cid"‚Ìê‡
+					:ƒRƒ“ƒeƒ“ƒcid(codã‚Ìcid)‚ðŽw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		command	= "absolute"‚Ü‚½‚Í"absolute2"A"relative"
+					:‰E•ûŒü‚Ö‚ÌˆÊ’u
 	posy : c•ûŒüˆÊ’u
 	posz : Œã‚ë•ûŒüˆÊ’u
 	rotx : x‰ñ“](Žg‚í‚È‚¢•û‚ª—Ç‚¢)
 	roty : ”½ŽžŒv•ûŒü‰ñ“]
 	rotz : z‰ñ“](Žg‚í‚È‚¢•û‚ª—Ç‚¢)
-	cid  : ƒRƒ“ƒeƒ“ƒcIDiCOD‚ÅŽw’èj
 
 
-Šî–{‚ÍˆÈ‰º‚ÌŠÖ”‚Å‚·B(live connect)
-window.DCubis2.EvalScript(theArgs);
-	theArgs : "mode,posx,posy,posz,rotx,roty,rotz,cid"‘Ž®‚Ì•¶Žš—ñ(”¼ŠpƒJƒ“ƒ}‹æØ‚è)
 
-EIE‚Ì‚Ý‚Å“®ì‚µ‚Ü‚·B
-E”¼Šp®”’l‚Ü‚½‚ÍNULL("")‚Ì‚Ýˆø”‚Æ‚µ‚Ä‚­‚¾‚³‚¢B(cid,mode,posx‚ðœ‚­)
+
+EFlash‚ÌƒZƒLƒ…ƒŠƒeƒBƒ|ƒŠƒV[‚É]‚¢“®ì‚µ‚Ü‚·B
+@httpƒvƒƒgƒRƒ‹‚ÅƒAƒNƒZƒX‚µA“¯ˆêƒhƒƒCƒ“ã‚ÉFlash‚ÆD-CubisƒGƒ“ƒWƒ“‚ª‘¶Ý‚·‚éê‡‚Í“Á‚É–â‘è‚È‚­“®ì‚·‚é‚Í‚¸‚Å‚·B
+  ƒtƒ@ƒCƒ‹ƒVƒXƒeƒ€ã‚Å“®ì‚³‚¹‚éê‡‚É‚ÍƒZƒLƒ…ƒŠƒeƒB‚ÌÝ’è
+@(http://www.macromedia.com/support/documentation/jp/flashplayer/help/settings_manager04.html@‚Å‚ÌƒpƒX‚Ì‹–‰Â)
+@‚ª•K—v‚Å‚·B
 EŒ»Ýjumpˆ—“™‚Í‚ ‚è‚Ü‚¹‚ñB
-E–{Žd—l‚ÍŽb’è‚Å‚·B¡Œã‘å•‚É•ÏX‚·‚é‰Â”\«‚ª‚ ‚è‚Ü‚·B
 
 
 
