@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+
+<!-- $Id: wa_v2.0.cod,v 1.1.1.1 2004/07/03 11:10:31 emoto Exp $ -->
+
+<COD>
+
+  <groups>
+
+    <group name="愛犬">
+      <group name="エレンちゃん">
+	<member oid="s001"/>
+	<member oid="s002"/>
+	<member oid="s003"/>
+	<member oid="s004"/>
+      </group>
+      <group name="ニーナちゃん">
+	<member oid="s005"/>
+	<member oid="s006"/>
+	<member oid="s007"/>
+	<member oid="s008"/>
+	<member oid="s009"/>
+	<member oid="s010"/>
+	<member oid="s011"/>
+	<member oid="s012"/>
+	<member oid="s013"/>
+      </group>
+      <member oid="s014"/>
+    </group>
+
+    <group name="学会DEWS2002in鬼怒川温泉">
+      <member oid="s016"/>
+      <member oid="s017"/>
+      <member oid="s018"/>
+      <member oid="s019"/>
+      <member oid="s020"/>
+      <member oid="s021"/>
+    </group>
+
+    <group name="大学卒業旅行inニューヨーク">
+      <member oid="s026"/>
+      <member oid="s027"/>
+      <member oid="s028"/>
+      <member oid="s029"/>
+      <member oid="s030"/>
+      <member oid="s031"/>
+    </group>
+
+  </groups>
+
+
+  <contents>
+
+    <picture oid="s001" src="./Contents/COD/MyDogs/Ellen/100-0035_IMG.JPG" title="洗い立て...">
+      <information>洗ったばかりのエレンちゃん！！ちょっと毛がボサボサ‥</information>
+    </picture>
+
+    <picture oid="s002" src="./Contents/COD/MyDogs/Ellen/101-0189_IMG.JPG" title="記念撮影">
+      <information>天気がよかったので、記念撮影！</information>
+    </picture>
+    
+    <picture oid="s003" src="./Contents/COD/MyDogs/Ellen/102-0221_IMG.JPG" title="疲れた...">
+      <information>ちょっと眠そう‥</information>
+    </picture>
+
+    <picture oid="s004" src="./Contents/COD/MyDogs/Ellen/108-0848_IMG.JPG" title="はなデカ倶楽部(?)">
+      <information>はなデカ倶楽部っぽく撮ったつもり‥ (^_^;)</information>
+    </picture>
+
+    <picture oid="s005" src="./Contents/COD/MyDogs/Nina/103-0328_IMG.JPG" title="一番かわいい時期">
+      <information>青い目がかわいいニーナちゃん！！</information>
+    </picture>
+
+    <picture oid="s006" src="./Contents/COD/MyDogs/Various/Dscf0097.jpg" title="食べすぎ！">
+      <information>まるまる太ってます‥</information>
+    </picture>
+
+    <picture oid="s007" src="./Contents/COD/MyDogs/Various/Mvc-004f.jpg" title="やんちゃです！">
+      <information>ちょっとやせたけど、かなりのやんちゃです。</information>
+    </picture>
+    
+    <picture oid="s008" src="./Contents/COD/MyDogs/Nina/105-0519_IMG.JPG" title="毛のつやがきれい">
+      <information>この座り方、どうなん！？</information>
+    </picture>
+    
+    <picture oid="s009" src="./Contents/COD/MyDogs/Nina/105-0553_IMG.JPG" title="ちょっとのびのび...">
+      <information>のびてるところを上から撮影。ちょっとかわいい。</information>
+    </picture>
+    
+    <picture oid="s010" src="./Contents/COD/MyDogs/Nina/105-0555_IMG.JPG" title="美人でしょ！？">
+      <information>とってもかわいい！！
+      一番のお気に入りです。</information>
+    </picture>
+    
+    <picture oid="s011" src="./Contents/COD/MyDogs/Nina/108-0839_IMG.JPG" title="なめんとんのかぁ！？">
+      <information>いつもこうやって車の下からみんなを見てます。そして、お年寄りが通るとなぜか一生懸命吠える。困ったものだ‥</information>
+    </picture>
+    
+    <picture oid="s012" src="./Contents/COD/MyDogs/Nina/108-0835_IMG.JPG" title="ねむいのぉ...">
+      <information>気持ちよく寝てるのに、起こさないでっ！？</information>
+    </picture>
+    
+    <picture oid="s013" src="./Contents/COD/MyDogs/Nina/nina1_20030211.jpg" title="中耳炎 (;_;)">
+      <information>中耳炎の治療中‥
+      しかし、治療費が高い‥</information>
+    </picture>
+    
+    <picture oid="s014" src="./Contents/COD/MyDogs/Various/108-0824_IMG.JPG">
+      <information>岡山在住のエレンちゃん（？）</information>
+    </picture>
+    
+    <picture oid="s015" src="./Contents/COD/MyCars/integra/100-0048_IMG_1.JPG">
+      <information>愛車のインテグラくんです。
+      洗車後でピッカピカ！！</information>
+    </picture>
+    
+    <picture oid="s016" src="./Contents/COD/Events/dbws20020717-19/104-0439_IMG.JPG">
+      <information>岡山県立大学です。
+      きれいな建物と川が流れ、気持ちのいい空間！！
+      後ろに見えているのは情報工学部棟。</information>
+    </picture>
+    
+    <picture oid="s017" src="./Contents/COD/Events/dbws20020717-19/104-0440_IMG.JPG" title="DBWS2002へ出発！">
+      <information>DBWS2002（学会）へ 岡山空港から飛行機に乗って出発！！
+      ちょっとした旅行だが、胸中は穏やかではない‥。
+      それは、発表があるから‥ (^_^;)</information>
+    </picture>
+    
+    <picture oid="s018" src="./Contents/COD/Events/dbws20020717-19/104-0442_IMG.JPG" title="疲れたよぉ～">
+      <information>発表後のえもとくん。ちょっと一安心‥
+      写真はとっても疲れてる‥ (-_-;)</information>
+    </picture>
+    
+    <picture oid="s019" src="./Contents/COD/Events/dbws20020717-19/104-0444_IMG.JPG" title="絶景！">
+      <information>絶景です！！
+      DBWS2003は鬼怒川温泉で行われました。</information>
+    </picture>
+    
+    <picture oid="s020" src="./Contents/COD/Events/dbws20020717-19/104-0482_IMG.JPG" title="最高！">
+      <information>景色最高！！</information>
+    </picture>
+    
+    <picture oid="s021" src="./Contents/COD/Events/dbws20020717-19/104-0489_IMG.JPG">
+      <information>帰りの池袋です。</information>
+    </picture>
+    
+    <picture oid="s022" src="./Contents/COD/Events/sakyu20020728-29/100-0078_IMG.JPG">
+      <information>in 鳥取砂丘。</information>
+    </picture>
+    
+    <picture oid="s023" src="./Contents/COD/Events/sakyu20020728-29/101-0101_IMG.JPG">
+      <information>浦富海水浴場(?) in 鳥取</information>
+    </picture>
+    
+    <picture oid="s024" src="./Contents/COD/Events/fireworks20010720/100-0059_IMG.JPG">
+      <information>船穂橋から‥（2001年）</information>
+    </picture>
+    
+    <picture oid="s025" src="./Contents/COD/Events/awaji20010908-09/101-0150_IMG.JPG">
+      <information>大鳴門橋（淡路より）</information>
+    </picture>
+    
+    <picture oid="s026" src="./Contents/COD/Travel/InNewYork20021122-26/emoto@pictures/IMG_0617.JPG">
+      <information>朝から散歩。気持ちがいい?。
+      実はニューヨークのセントラルパークです！！
+      とってもキレイ！！</information>
+    </picture>
+    
+    <picture oid="s028" src="./Contents/COD/Travel/InNewYork20021122-26/emoto@pictures/IMG_0640.JPG">
+      <information>てまえがブルックリンブリッジ、奥がマンハッタンブリッジです。
+      夜のブルックリンブリッジが見たかったが、危ないらしい。。。</information>
+    </picture>
+    
+    <picture oid="s029" src="./Contents/COD/Travel/InNewYork20021122-26/fujii@pictures/DSCF0069.JPG">
+      <information>サウス・ストリート・シーポートより</information>
+    </picture>
+    
+    <picture oid="s027" src="./Contents/COD/Travel/InNewYork20021122-26/emoto@pictures/IMG_0623.JPG">
+      <information>都会の中にあるセントラルパーク‥。
+      ここだけ世界がちがう‥。</information>
+    </picture>
+    
+    <picture oid="s030" src="./Contents/COD/Travel/InNewYork20021122-26/emoto@pictures/IMG_0668.JPG">
+      <information>世界一の夜景！！
+      これはエンパイア・ステート・ビルから撮ったがうまく撮れなかった‥
+      ここが写真では伝わらない感動がある！！
+      機会があればぜひ！？(^0^)</information>
+    </picture>
+    
+    <picture oid="s031" src="./Contents/COD/Travel/InNewYork20021122-26/emoto@pictures/IMG_0735.JPG">
+      <information>コンコルド！！
+      帰りの空港（ジョン・F・ケネディ）で偶然発見！！</information>
+    </picture>
+    
+    <picture oid="s033" src="./Contents/COD/Events/graduation20030324/107-0792_IMG.JPG" title="大学卒業式">
+      <information>ちょっときまってるえもとくん！！(^_^;)</information>
+    </picture>
+    
+    <picture oid="s032" src="./Contents/COD/Events/graduation20020325/103-0327_IMG.JPG" title="いい景色！">
+      <information>岡山県立大学、卒業式の朝‥
+      こんなところに春を発見！！</information>
+    </picture>
+    
+    <picture oid="s034" src="./Contents/COD/SoccerClub/102-0265_IMG.JPG">
+      <information>オレンジのシャツがえもとくん！！
+      ちなみに福山（広島県）で合宿中</information>
+    </picture>
+    
+    <picture oid="s035" src="./Contents/COD/Various/AkashiBulige/100-0015_IMG.JPG">
+      <information>明石海峡大橋。夜はさらにきれいです！！</information>
+    </picture>
+    
+    <picture oid="s036" src="./Contents/COD/Ohokochi/rain1.jpg">
+    </picture>
+    
+    <picture oid="s037" src="./Contents/COD/Ohokochi/tomorrow1.jpg">
+    </picture>
+    
+    <picture oid="s038" src="./Contents/COD/Various/etc/wanwan.jpg" title="看板">
+    </picture>
+    
+    <picture oid="s039" src="./Contents/COD/Various/etc/inNewYork.jpg" title="看板">
+    </picture>
+    
+<!--    <picture oid="s040" src="./Contents/COD/Various/etc/dumy.jpg">
+    </picture>
+-->
+    <color oid="s040" color="black"/>
+    
+    <picture oid="s041" src="./Contents/COD/Various/etc/wa1.jpg" title="シンボル">
+      <information>このミュージアムのシンボルです</information>
+    </picture>
+    
+    <picture oid="s042" src="./Contents/COD/Various/etc/boshu.jpg">
+    </picture>
+    
+    <picture oid="s043" src="./Contents/COD/Various/etc/soccer.jpg" title="看板">
+    </picture>
+
+    <picture oid="s044" src="./Contents/COD/Various/etc/tree1.jpg" title="水墨画？">
+      <information>水墨画のつもり...</information>
+    </picture>
+    
+    <picture oid="s045" src="./Contents/COD/Various/etc/NoPrinting1.jpg">
+      <information>画像がありません。。。</information>
+    </picture>
+
+    <picture oid="s046" src="./Contents/COD/Ohokochi/dream.jpg"  title="良い言葉">
+    </picture>
+
+    <picture oid="s047" src="./Contents/COD/Ohokochi/namida.jpg">
+    </picture>
+
+    <picture oid="s048" src="./Contents/COD/Ohokochi/walk.jpg">
+    </picture>
+    
+    <picture oid="s049" src="./Contents/COD/Various/WaterFall/IMG_0949.JPG" title="紅葉 in 神庭の滝">
+      <information>神庭の滝（岡山）で見つけた紅葉！</information>
+    </picture>
+
+    <picture oid="s050" src="./Contents/COD/Various/OPU/DSCN1438.JPG" title="夕日">
+      <information>研究室からの見た夕日</information>
+    </picture>
+
+    <picture oid="s051" src="./Contents/COD/Various/OPU/IMG_1705.JPG" title="いい景色！">
+      <information>岡山県立大学と紅葉</information>
+    </picture>
+
+    <picture oid="s052" src="./Contents/COD/Various/OPU/IMG_1702.JPG" title="紅葉">
+      <information>岡山県立大学内
+      きれいな紅葉‥</information>
+    </picture>
+
+    <picture oid="s053" src="./Contents/COD/Various/etc/20031221haiku.jpg" title="癒しかなぁ...">
+    </picture>
+    
+    
+    <sound oid="harunoumi" src="./Contents/Sounds/harunoumi.mp3">
+    </sound>
+
+    <picture oid="door" src="./Contents/BUD/door1.jpg">
+    </picture>
+
+    <picture oid="board" src="./Contents/COD/Various/etc/board.jpg">
+    </picture>
+
+    <picture oid="soccerBall" src="./Contents/COD/Various/etc/soccerBall.jpg">
+    </picture>
+
+    <picture oid="soccerBall1" src="./Contents/COD/Various/etc/soccerBall1.jpg">
+    </picture>
+
+    <picture oid="basketBall" src="./Contents/COD/Various/etc/basketBall.jpg">
+    </picture>
+
+    <picture oid="nonSemantics" src="./Contents/COD/Various/etc/nonSemantics.jpg">
+    </picture>
+
+    <string oid="lightColor" src="☆照明コーナー☆全色揃ってます！" foreground="(90,9,20)" background="(188,159,32)" title="看板">
+    </string>
+
+    <string oid="D-CubisHP" src="D-Cubis Official Site!" foreground="(255,255,255)" background="(0,0,0)" title="看板">
+    </string>
+
+    <shockwave3d oid="sample3d" src="./Contents/3D/unnamed.w3d" modelSourceName="test" title="ダイアモンド">
+      <information>ダイアモンド(そのままのサイズ)</information>
+    </shockwave3d>
+
+    <shockwave3d oid="kyu" src="./Contents/3D/kyu.w3d" modelSourceName="kyu" title="球？">
+      <information>球のつもり...(3/10 のサイズ)</information>
+    </shockwave3d>
+
+    <shockwave3d oid="wa" src="./Contents/3D/wa.w3d" modelSourceName="wa" title="３Ｄの和">
+      <information>色を付けてみた！
+少しずつ LightWave3D が使えるようになってきたかなぁ... (^^;)</information>
+    </shockwave3d>
+
+    <picture oid="shizen1" src="./Contents/COD/Various/shizen/PIC_0129.jpg"/>
+    <picture oid="shizen2" src="./Contents/COD/Various/shizen/PIC_0085.jpg"/>
+    <picture oid="shizen3" src="./Contents/COD/Various/shizen/PIC_0086.jpg"/>
+    <picture oid="shizen4" src="./Contents/COD/Various/shizen/PIC_0087.jpg"/>
+    <picture oid="shizen5" src="./Contents/COD/Various/shizen/PIC_0088.jpg"/>
+    <picture oid="shizen6" src="./Contents/COD/Various/shizen/PIC_0089.jpg"/>
+
+    <picture oid="photoreading" src="./Contents/COD/Various/etc/PhotoReading.jpg" title="はやってる！？" >
+      <information>フォトリーディングであなたも楽しい人生を...
+注意: 宗教ではありません(^^;</information>
+    </picture>
+
+    <picture oid="meter" src="./Contents/COD/MyCars/integra/PIC_0004.jpg" title="77,777km!" >
+      <information>大学を一周してまで写真に収めたこの瞬間！</information>
+    </picture>
+
+  </contents>
+
+</COD>
