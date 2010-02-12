@@ -1,0 +1,1 @@
+java -jar COD2Language.jar wa_v2.0.cod demo Contents false
