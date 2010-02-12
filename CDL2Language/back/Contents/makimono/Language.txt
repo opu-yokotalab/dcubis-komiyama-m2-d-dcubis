@@ -1,9 +1,0 @@
-MAKIMONO=[
-DETAIL(background="_",size="normal",color="beige");
-ENTITY(url="tubo.txt",fontsize=14,position=(_,_),lateral=_);
-ENTITY(url="ew00020002.jpg",scale=0.4,position=(_,_),title="",tag="");
-ENTITY(url="tubo2.txt",fontsize=14,position=(_,_),lateral=false);
-ENTITY(url="tubo3.txt",fontsize=14,position=(-50,_),lateral=_);
-ENTITY(url="ew00030003.jpg",scale=_,position=(_,_),title="",tag="");
-ENTITY(url="tubo4.txt",fontsize=14,position=(_,_),lateral=false);
-]

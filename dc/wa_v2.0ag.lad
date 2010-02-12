@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+
+<!-- $Id: wa_v2.0.lad,v 1.1.1.1 2004/07/03 11:10:31 emoto Exp $ -->
+
+<LAD>
+
+  <wall cellID="room18" direction="right">
+    <slideshow location="(0,-17)" size="(92,69)" buttonLocation="(0,-70)" buttonSize="(20,20)">
+      <obj oid="s005"></obj>
+      <obj oid="s006"></obj>
+      <obj oid="s007"></obj>
+      <obj oid="s008"></obj>
+      <obj oid="s009"></obj>
+      <obj oid="s010"></obj>
+      <obj oid="s011"></obj>
+      <obj oid="s012"></obj>
+      <obj oid="s013"></obj>
+    </slideshow>
+  </wall>
+
+  <wall cellID="room18" direction="left">
+    <slideshow location="(0,-17)" size="(92,69)" buttonLocation="(0,-70)" buttonSize="(20,20)">
+      <obj oid="s001"></obj>
+      <obj oid="s002"></obj>
+      <obj oid="s003"></obj>
+      <obj oid="s004"></obj>
+    </slideshow>
+  </wall>
+
+  <wall cellID="room25" direction="front">
+    <showcase location="(0,-17)" size="(92,69)">
+      <obj oid="meter"></obj>
+    </showcase>
+<!--    <showcase location="(-50,-120)" size="(92,69)" distance="50" rotation="(30, 0, 90)">-->
+    <showcase location="(-50,0)" size="(92,69)" distance="50" rotation="(30, 0, 120)">
+      <obj oid="photoreading"></obj>
+    </showcase>
+  </wall>
+
+  <wall cellID="room25" direction="left">
+    <showcase location="(0,-17)" size="(92,69)" distance="-80">
+      <obj oid="s015"></obj>
+    </showcase>
+    <box location="(-315,0)" size="(196,147)" mode="auto">
+      <obj oid="s033"></obj>
+      <obj oid="s032"></obj>
+      <obj oid="s040"></obj>
+      <obj oid="s032"></obj>
+    </box>
+  </wall>
+
+  <wall cellID="room33" direction="backRight">
+  </wall>
+
+  <wall cellID="room40" direction="back">
+    <box location="(-525,0)" size="(196,147)" mode="auto">
+      <obj oid="s024"></obj>
+      <obj oid="s021"></obj>
+      <obj oid="s040"></obj>
+      <obj oid="s032"></obj>
+    </box>
+  </wall>
+
+  <wall cellID="room40" direction="backRight">
+    <box location="(50,0)" size="(200,150)" mode="auto">
+      <obj oid="s019"></obj>
+      <obj oid="s018"></obj>
+      <obj oid="s017"></obj>
+      <obj oid="s020"></obj>
+    </box>
+  </wall>
+
+  <wall cellID="room42" direction="right">
+    <showcase location="(0,50)" size="(200,40)">
+      <obj oid="lightColor"></obj>
+    </showcase>
+  </wall>
+
+  <wall cellID="room42" direction="left">
+  </wall>
+
+  <wall cellID="room50" direction="back">
+    <showcase location="(0,40)" size="(90,20)" distance="-80">
+      <obj oid="s039"></obj>
+    </showcase>
+    <slideshow location="(0,-17)" size="(92,69)" buttonLocation="(0,-70)" buttonSize="(20,20)" buttonDistance="-80" distance="-80">
+      <obj oid="s026"></obj>
+      <obj oid="s027"></obj>
+    </slideshow>
+  </wall>
+
+  <wall cellID="room50" direction="left">
+    <showcase location="(0,-17)" size="(92,69)">
+      <obj oid="s030"></obj>
+    </showcase>
+  </wall>
+
+  <wall cellID="room50" direction="right">
+    <slideshow location="(0,-17)" size="(92,69)" buttonLocation="(0,-70)" buttonSize="(20,20)">
+      <obj oid="s028"></obj>
+      <obj oid="s029"></obj>
+      <obj oid="s031"></obj>
+    </slideshow>
+  </wall>
+
+  <wall cellID="room45" direction="right">
+    <appear buttonLocation="(-150,-70)" buttonSize="(20,20)">
+      <showcase location="(-150,-17)" size="(92,69)">
+	<obj oid="s053"></obj>
+      </showcase>
+    </appear>
+    <outlink type="link" buttonLocation="(0,-70)" buttonSize="(20,20)" href="http://localhost/HP/D-Cubis/">
+    </outlink>
+    <showcase location="(0,0)" size="(120,60)">
+      <obj oid="D-CubisHP"></obj>
+    </showcase>
+
+<!--
+    <appear buttonLocation="(0,0)" buttonSize="(20,20)">
+      <showcase location="(0,-17)" size="(92,69)">
+	<obj oid="s053"></obj>
+      </showcase>
+    </appear>
+    <outlink type="link" buttonLocation="(0,70)" buttonSize="(20,20)" href="http://alpha.c.oka-pu.ac.jp/D-Cubis/">
+    </outlink>
+-->
+  </wall>
+
+  <wall cellID="room45" direction="left">
+    <cylinder location="(0,-100)" size="(300,20)" distance="0" rotate="vertical">
+      <obj oid="board"/>
+    </cylinder>
+    <cylinder location="(0,-100)" size="(300,20)" distance="20" rotate="vertical">
+      <obj oid="board"/>
+    </cylinder>
+    <cylinder location="(0,-100)" size="(300,20)" distance="40" rotate="vertical">
+      <obj oid="board"/>
+    </cylinder>
+    <cylinder location="(120,-120)" size="(20,50)" distance="0" rotate="horizontal">
+      <obj oid="board"/>
+    </cylinder>
+    <cylinder location="(120,-120)" size="(20,50)" distance="20" rotate="horizontal">
+      <obj oid="board"/>
+    </cylinder>
+    <cylinder location="(120,-120)" size="(20,50)" distance="40" rotate="horizontal">
+      <obj oid="board"/>
+    </cylinder>
+    <cylinder location="(-120,-120)" size="(20,50)" distance="0" rotate="horizontal">
+      <obj oid="board"/>
+    </cylinder>
+    <cylinder location="(-120,-120)" size="(20,50)" distance="20" rotate="horizontal">
+      <obj oid="board"/>
+    </cylinder>
+    <cylinder location="(-120,-120)" size="(20,50)" distance="40" rotate="horizontal">
+      <obj oid="board"/>
+    </cylinder>
+
+    <sphere location="(-80,-130)" radius="15" distance="15" rotate="vertical">
+      <obj oid="soccerBall1"/>
+    </sphere>
+    <sphere location="(-40,-130)" radius="18" distance="10" >
+      <obj oid="basketBall"/>
+    </sphere>    
+  </wall>
+
+  <wall cellID="room52" direction="back">
+  </wall>
+
+  
+  
+  <wall cellID="room29" direction="backLeft">
+    <showcase gimmickID="wa" location="(0,-17)" size="(92,69)" distance="-118">
+      <obj oid="s047"></obj>
+    </showcase>
+  </wall>
+
+  <wall cellID="room53" direction="frontLeft">
+    <showcase location="(0,43)" size="(90,20)" distance="-118">
+      <obj oid="s043"></obj>
+    </showcase>
+    <slideshow location="(0,-17)" size="(92,69)" buttonLocation="(0,-70)" buttonSize="(20,20)" distance="-118" buttonDistance="-118">
+      <obj oid="s034"></obj>
+      <obj oid="s022"></obj>
+      <obj oid="s023"></obj>
+      <obj oid="s025"></obj>
+    </slideshow>
+  </wall>
+
+  <wall cellID="room36" direction="frontRight">
+    <showcase location="(0,-17)" size="(92,69)" distance="118">
+      <obj oid="s037"></obj>
+    </showcase>
+  </wall>
+
+  <wall cellID="room28" direction="front">
+    <showcase location="(0,-17)" size="(92,69)">
+      <obj oid="s046"></obj>
+    </showcase>
+    <post location="(-150,-80)" rotation="(0,45,0)" distance="10" size="small" mailto="emoto@c.oka-pu.ac.jp"/>
+    <w3d oid="kyu" location="(-100,-100)" rotation="(0,0,0)" distance="350" sizeRate="0.3"/>
+  </wall>
+    
+  <wall cellID="room37" direction="right">
+    <showcase location="(0,-17)" size="(92,69)">
+      <obj oid="s048"></obj>
+    </showcase>
+  </wall>
+
+  <wall cellID="room27" direction="front">
+    <showcase location="(0,-17)" size="(92,78)">
+      <obj oid="s044"></obj>
+    </showcase>
+    <cylinder location="(170,-50)" size="(50,300)" distance="20" rotate="horizontal" mode="auto">
+      <obj oid="nonSemantics"/>
+    </cylinder>
+    <w3d oid="sample3d" location="(170,-140)" rotation="(90,0,0)" distance="350" sizeRate="1.0"/>
+  </wall>
+
+
+  <wall cellID="room35" direction="frontLeft">
+    <showcase location="(0,-17)" size="(90,72)" distance="118">
+      <obj oid="s041"></obj>
+    </showcase>
+    <w3d oid="wa" location="(90,-190)" rotation="(0,100,0)" distance="160" sizeRate="4.0"/>
+  </wall>
+    
+  <wall cellID="room41" direction="frontLeft">
+  </wall>
+
+  <wall cellID="room18" direction="front">
+    <showcase location="(0,40)" size="(90,20)" distance="-80">
+      <obj oid="s038"></obj>
+    </showcase>
+    <showcase location="(0,-17)" size="(92,69)" distance="-80">
+      <obj oid="s014"></obj>
+    </showcase>
+  </wall>
+  
+  <wall cellID="room52" direction="backRight">
+    <slideshow location="(0,-17)" size="(92,69)" buttonLocation="(0,-70)" buttonSize="(20,20)" distance="-118" buttonDistance="-118" >
+      <obj oid="shizen1"></obj>
+      <obj oid="shizen2"></obj>
+      <obj oid="shizen3"></obj>
+      <obj oid="shizen4"></obj>
+      <obj oid="shizen5"></obj>
+      <obj oid="shizen6"></obj>
+    </slideshow>
+    <box location="(50,0)" size="(200,150)" mode="auto" rotate="vertical" distance="-100">
+      <obj oid="s049"></obj>
+      <obj oid="s050"></obj>
+      <obj oid="s051"></obj>
+      <obj oid="s052"></obj>
+    </box>
+  </wall>
+  
+  
+</LAD>

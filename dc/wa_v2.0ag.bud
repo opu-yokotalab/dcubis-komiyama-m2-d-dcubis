@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+
+<!-- $Id: wa_v2.0.bud,v 1.3 2004/07/07 16:09:08 emoto Exp $ -->
+
+<BUD title="日本人らしく和風の建物の中に書道含め、個人的な大学生活の思い出が盛り沢山！！" backdrop="Contents/BUD/IMG_0623.jpg">
+<!--
+  <port>
+    <entrance portID="enterWa" type="door" cellID="room26" point="frontLeft" direction="backRight"/>
+--><!--    
+    <entrance portID="secret" type="door" cellID="room50" point="back" direction="front"/>
+    <exit type="door" cellID="room45" point="left" direction="right" connectURL="http://localhost/D-Cubist/Data/startWa_v2.0.xml" connectPort="secret"/>
+    <exit type="door" cellID="room52" point="back" direction="front" connectURL="http://localhostD-Cubis/Data/shoe.xml" connectPort="enterShoe"/>
+--><!--
+  </port>
+-->
+  <structure ceiling="(255,255,204)"
+	     floor="Contents/BUD/floor.jpg"
+	     wallpaper="(231,229,183)"
+	     polepaper="(153,153,100)"
+	     pole="corner"
+	     cellSize="420" 
+	     height="300"
+	     lightColor="normal"
+	     startCell="room26"
+	     startPoint="center"
+	     startDirection="backRight"
+             BGM="none">
+
+
+    <cellSet name="わんわんコーナー">
+
+      <cell name="room18">
+	<front wallpaper="Contents/BUD/kakejiku1.jpg" surface="outcurve"></front>
+	<back to="room26"></back>
+	<right wallpaper="Contents/BUD/kakejiku1.jpg"></right>
+	<left wallpaper="Contents/BUD/kakejiku1.jpg"></left>
+      </cell>
+      
+    </cellSet>
+
+
+    <cellSet name="ロビー" height="400">
+
+      <cell name="room26">
+	<front to="room18"></front>
+	<back to="room34"></back>
+	<right to="room27"></right>
+	<left to="room25"></left>
+      </cell>
+      
+      <cell name="room27">
+	<front wallpaper="Contents/BUD/kakejiku1.jpg"></front>
+	<back to="room35"></back>
+	<right to="room28">
+<!--	  <door location="(0,0)" size="(100, 250)" color="red" alpha="low"/> -->
+	</right>
+	<left to="room26"></left>
+      </cell>
+      
+      <cell name="room34">
+	<front to="room26"></front>
+	<back to="room42"></back>
+	<right to="room35"></right>
+	<left to="room33"></left>
+      </cell>
+    
+      <cell name="room35">
+	<front to="room27"></front>
+	<left to="room34"></left>
+	<frontLeft wallpaper="Contents/BUD/kakejiku2.jpg" surface="incurve"></frontLeft>
+      </cell>
+      
+    </cellSet>
+
+
+    <cellSet name="インテグラ">
+
+      <cell name="room25">
+	<front wallpaper="Contents/BUD/kakejiku1.jpg"></front>
+	<back alpha="low"></back>
+	<right to="room26"></right>
+	<left wallpaper="Contents/BUD/kakejiku1.jpg" surface="outcurve"></left>
+      </cell>
+
+    </cellSet>
+    
+
+    <cellSet name="学会DBWS2002">
+      
+      <cell name="room33">
+	<back to="room41"></back>
+	<right to="room34"></right>
+	<backRight alpha="low"></backRight>
+      </cell>
+      
+      <cell name="room40">
+	<back surface="outcurve"></back>
+	<right to="room41"></right>
+	<backRight></backRight>
+      </cell>
+      
+      <cell name="room41">
+	<front to="room33"></front>
+	<left to="room40"></left>
+	<frontLeft alpha="low"></frontLeft>
+      </cell>
+      
+    </cellSet>
+    
+    
+    <cellSet name="旅行inNewYork">
+      
+      <cell name="room42">
+	<front to="room34"></front>
+	<back to="room50"></back>
+	<right>
+	  <light mode="normal" buttonLocation="(0,0)" buttonSize="(20,20)"/>
+	  <light mode="aqua" buttonLocation="(-75,-50)" buttonSize="(20,20)"/>
+	  <light mode="dark" buttonLocation="(-25,-50)" buttonSize="(20,20)"/>
+	  <light mode="yellow" buttonLocation="(25,-50)" buttonSize="(20,20)"/>
+	  <light mode="pink" buttonLocation="(75,-50)" buttonSize="(20,20)"/>
+	  <light mode="guardman" buttonLocation="(0,-100)" buttonSize="(20,20)"/>
+	</right>
+	<left alpha="low"></left>
+      </cell>
+      
+      <cell name="room50">
+	<front to="room42"></front>
+	<back wallpaper="Contents/BUD/kakejiku1.jpg" surface="outcurve"></back>
+	<right wallpaper="Contents/BUD/kakejiku1.jpg"></right>
+	<left wallpaper="Contents/BUD/kakejiku1.jpg"></left>
+      </cell>
+      
+    </cellSet>
+    
+
+    <cellSet name="書道展">
+      
+      <cell name="room28">
+	<front wallpaper="Contents/BUD/kakejiku1.jpg"></front>
+	<back to="room36"></back>
+	<right to="room29"></right>
+	<left to="room27">
+	  <door location="(0,0)" size="(100, 250)" color="red" alpha="low"/>
+	</left>
+      </cell>
+
+      <cell name="room29">
+	<back to="room37"></back>
+	<left to="room28"></left>
+	<backLeft wallpaper="Contents/BUD/kakejiku2.jpg" surface="outcurve"></backLeft>
+      </cell>
+      
+      <cell name="room36">
+	<front to="room28"></front>
+	<right to="room37"></right>
+	<frontRight wallpaper="Contents/BUD/kakejiku2.jpg" surface="incurve"></frontRight>
+      </cell>
+      
+      <cell name="room37">
+	<front to="room29"></front>
+	<back to="room45"></back>
+	<right wallpaper="Contents/BUD/kakejiku1.jpg"></right>
+	<left to="room36"></left>
+      </cell>
+      
+    </cellSet>
+    
+    
+    <cellSet name="サッカーコーナー">
+      
+      <cell name="room45">
+	<front to="room37"></front>
+	<back to="room53"></back>
+	<right>
+	  <light mode="guardman" buttonLocation="(0,-70)" buttonSize="(20,20)"/>
+	</right>
+	<left></left>
+      </cell>
+      
+      <cell name="room52">
+	<back></back>
+	<right to="room53"></right>
+	<backRight surface="outcurve">
+	  <window location="(0,0)" size="(100, 70)"/>	
+	</backRight>
+      </cell>
+    
+      <cell name="room53">
+	<front to="room45"></front>
+	<left to="room52"></left>
+	<frontLeft wallpaper="Contents/BUD/kakejiku2.jpg" surface="outcurve"></frontLeft>
+      </cell>
+      
+    </cellSet>
+
+  </structure>
+  
+</BUD>
