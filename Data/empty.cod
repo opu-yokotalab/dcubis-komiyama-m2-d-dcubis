@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <COD>
-    <contents/>
+	<contents>
+	<color oid="dummy" color="black"/>
+	</contents>
 </COD>

@@ -2,7 +2,7 @@
 <LAD>
 
   <wall cellID="room18" direction="right">
-   </wall>
+  </wall>
 
   <wall cellID="room18" direction="left">
   </wall>
@@ -17,13 +17,13 @@
   </wall>
 
   <wall cellID="room40" direction="back">
-   </wall>
+  </wall>
 
   <wall cellID="room40" direction="backRight">
   </wall>
 
   <wall cellID="room42" direction="right">
-   </wall>
+  </wall>
 
   <wall cellID="room42" direction="left">
   </wall>
@@ -45,8 +45,6 @@
 
   <wall cellID="room52" direction="back">
   </wall>
-
-  
   
   <wall cellID="room29" direction="backLeft">
   </wall>
@@ -66,7 +64,6 @@
   <wall cellID="room27" direction="front">
   </wall>
 
-
   <wall cellID="room35" direction="frontLeft">
   </wall>
     
@@ -78,6 +75,5 @@
   
   <wall cellID="room52" direction="backRight">
   </wall>
-  
   
 </LAD>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="SHIFT_JIS"?>
+
+<!-- $Id: startWa_v2.0ag.xml,v 1.4 2004/07/07 12:21:06 emoto Exp $ -->
+
+<D-Cubis>
+  <title>Title</title>
+  <initDataUrl base="http://localhost/dc/">
+    <bud src="Data/wa_v2.0ag.bud"/>
+    <lad src="Data/empty.lad"/>
+    <cod src="Data/empty.cod"/>
+  </initDataUrl>
+</D-Cubis>
