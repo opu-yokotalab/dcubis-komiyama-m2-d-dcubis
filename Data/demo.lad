@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<LAD>
+
+  <wall cellID="room18" direction="right">
+    <showcase location="(0,-17)" size="(92,69)">
+      <obj oid="d01"></obj>
+    </showcase>
+  </wall>
+
+  <wall cellID="room18" direction="left">
+    <showcase location="(0,-17)" size="(92,69)">
+      <obj oid="d02"></obj>
+    </showcase>
+  </wall>
+
+  <wall cellID="room25" direction="front">
+    <showcase location="(0,-17)" size="(92,69)">
+      <obj oid="d03"></obj>
+    </showcase>
+  </wall>
+
+  <wall cellID="room25" direction="left">
+    <showcase location="(0,-17)" size="(92,69)" distance="-80">
+      <obj oid="d04"></obj>
+    </showcase>
+  </wall>
+
+  <wall cellID="room33" direction="backRight">
+  </wall>
+
+  <wall cellID="room40" direction="back">
+    <showcase location="(0,-17)" size="(92,69)" distance="-80">
+      <obj oid="d06"></obj>
+    </showcase>
+  </wall>
+
+  <wall cellID="room40" direction="backRight">
+	<showcase location="(0,-17)" size="(92,69)">
+		<obj oid="d07"></obj>
+	</showcase>
+  </wall>
+
+  <wall cellID="room42" direction="right">
+  </wall>
+
+  <wall cellID="room42" direction="left">
+    <showcase location="(0,-17)" size="(92,69)">
+      <obj oid="d09"></obj>
+    </showcase>
+  </wall>
+
+  <wall cellID="room50" direction="back">
+    <showcase location="(0,-17)" size="(92,69)">
+      <obj oid="d10"></obj>
+    </showcase>
+  </wall>
+
+  <wall cellID="room50" direction="left">
+    <showcase location="(0,-17)" size="(92,69)">
+      <obj oid="d11"></obj>
+    </showcase>
+  </wall>
+
+  <wall cellID="room50" direction="right">
+    <showcase location="(0,-17)" size="(92,69)">
+      <obj oid="d12"></obj>
+    </showcase>
+  </wall>
+
+  <wall cellID="room45" direction="right">
+    <showcase location="(0,-17)" size="(92,69)">
+      <obj oid="d13"></obj>
+    </showcase>
+  </wall>
+
+  <wall cellID="room45" direction="left">
+    <showcase location="(0,-17)" size="(92,69)">
+      <obj oid="d14"></obj>
+    </showcase>
+  </wall>
+
+  <wall cellID="room52" direction="back">
+    <showcase location="(0,-17)" size="(92,69)">
+      <obj oid="d15"></obj>
+    </showcase>
+  </wall>
+  
+  <wall cellID="room29" direction="backLeft">
+    <showcase location="(0,-17)" size="(92,69)" distance="-118">
+      <obj oid="d16"></obj>
+    </showcase>
+  </wall>
+
+  <wall cellID="room53" direction="frontLeft">
+    <showcase location="(0,-17)" size="(92,69)" distance="-118">
+      <obj oid="d17"></obj>
+    </showcase>
+  </wall>
+
+  <wall cellID="room36" direction="frontRight">
+    <showcase location="(0,-17)" size="(92,69)" distance="118">
+      <obj oid="d18"></obj>
+    </showcase>
+  </wall>
+
+  <wall cellID="room28" direction="front">
+    <showcase location="(0,-17)" size="(92,69)">
+      <obj oid="d08"></obj>
+    </showcase>
+  </wall>
+    
+  <wall cellID="room37" direction="right">
+    <showcase location="(0,-17)" size="(92,69)">
+      <obj oid="d20"></obj>
+    </showcase>
+  </wall>
+
+  <wall cellID="room27" direction="front">
+    <showcase location="(0,-17)" size="(92,69)">
+      <obj oid="d21"></obj>
+    </showcase>
+  </wall>
+
+  <wall cellID="room35" direction="frontLeft">
+    <showcase location="(0,-17)" size="(92,69)" distance="118">
+      <obj oid="d22"></obj>
+    </showcase>
+  </wall>
+    
+  <wall cellID="room41" direction="frontLeft">
+	<showcase location="(0,-17)" size="(92,69)" distance="118">
+		<obj oid="d05"></obj>
+	</showcase>
+  </wall>
+
+  <wall cellID="room18" direction="front">
+    <showcase location="(0,-17)" size="(92,69)" distance="-80">
+      <obj oid="d23"></obj>
+    </showcase>
+  </wall>
+  
+  <wall cellID="room52" direction="backRight">
+    <showcase location="(0,-17)" size="(92,69)" distance="-118">
+      <obj oid="d19"></obj>
+    </showcase>
+  </wall>
+  
+</LAD>

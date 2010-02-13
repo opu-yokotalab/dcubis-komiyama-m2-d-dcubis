@@ -3,7 +3,7 @@
   <title>Title</title>
   <initDataUrl base="http://localhost/dc/">
     <bud src="Data/wa_v2.0ag.bud"/>
-    <lad src="Data/empty.lad"/>
-    <cod src="Data/empty.cod"/>
+    <lad src="Data/demo.lad"/>
+    <cod src="Data/demo.cod"/>
   </initDataUrl>
 </D-Cubis>
