@@ -50,7 +50,7 @@
   </wall>
 
   <wall cellID="room50" direction="back">
-    <showcase location="(0,-17)" size="(92,69)">
+    <showcase location="(0,-17)" size="(92,69)" distance="-80">
       <obj oid="d10"></obj>
     </showcase>
   </wall>
