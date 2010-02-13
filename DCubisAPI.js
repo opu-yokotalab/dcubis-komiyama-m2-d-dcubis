@@ -36,7 +36,7 @@ function left(posx){
 }
 //右回転
 function turnR(rot){
-  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative","","","","",rot,"");
+  getMovieName("DCubisAPIinHTML").DCubisJ2F("relative","","","","",-rot,"");
 }
 //左回転
 function turnL(rot){
