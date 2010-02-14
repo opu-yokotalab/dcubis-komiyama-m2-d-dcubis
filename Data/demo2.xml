@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="SHIFT_JIS"?>
+<D-Cubis>
+  <title>Title</title>
+  <initDataUrl base="http://localhost/dc/">
+    <bud src="Data/demo2.bud"/>
+    <lad src="Data/demo.lad"/>
+    <cod src="Data/demo.cod"/>
+  </initDataUrl>
+</D-Cubis>
