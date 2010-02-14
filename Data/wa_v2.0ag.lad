@@ -109,7 +109,7 @@
 	<obj oid="s053"></obj>
       </showcase>
     </appear>
-    <outlink type="link" buttonLocation="(0,-70)" buttonSize="(20,20)" href="http://localhost/HP/D-Cubis/">
+    <outlink type="link" buttonLocation="(0,-70)" buttonSize="(20,20)" href="http://localhost/">
     </outlink>
     <showcase location="(0,0)" size="(120,60)">
       <obj oid="D-CubisHP"></obj>
