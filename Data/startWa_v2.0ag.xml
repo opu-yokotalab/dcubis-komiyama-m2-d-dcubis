@@ -4,7 +4,7 @@
 
 <D-Cubis>
   <title>Title</title>
-  <initDataUrl base="http://alpha.c.oka-pu.ac.jp/D-Cubis/PublicData/D-Cubis/">
+  <initDataUrl base="http://localhost/dc/">
     <bud src="Data/wa_v2.0ag.bud"/>
     <lad src="Data/wa_v2.0ag.lad"/>
     <cod src="Data/wa_v2.0.cod"/>
